@@ -27,6 +27,7 @@ body{
     height: 70px;
     padding: 0px 130px 0px 60px;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 .container > .content > .header > .menu{
     display: flex;

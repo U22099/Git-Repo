@@ -10,9 +10,11 @@
         height: 100%;
         flex-direction: column;
         padding: 0px;
+        width: 100%;
     }
     .container > .content > .header > .menu{
         flex-direction: column;
+        width: 100%;
     }
     .container > .content > .header > .menu > .menuitems{
         margin: 15px 0px;
