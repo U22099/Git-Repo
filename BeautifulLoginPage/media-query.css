@@ -9,7 +9,7 @@
     .container > .content > .header{
         height: 100%;
         flex-direction: column;
-        padding: 0px 30px 0px 20px;
+        padding: 0px;
     }
     .container > .content > .header > .menu{
         flex-direction: column;
@@ -25,15 +25,19 @@
         width: 100%;
     }
     .container > .content > .form-container > .form-content{
-        width: 380px;
-    }
-    .container > .content > .form-container > .form-content > .entries > .input{ 
         width: 300px;
     }
-    .container > .content > .form-container > .form-content > .loginbtn{ 
-        width: 290px;
+    .container > .content > .form-container > .form-content > .entries > .input{ 
+        width: 250px;
     }
+    .container > .content > .form-container > .form-content > .loginbtn{ 
+        width: 200px;
+    }
+    .container > .content > .form-container > .form-content > .ps h2, a{
+        font-size: 1rem;
+    } 
     .container > .content > .footer {
         width: 100%;
     }
+
 }

@@ -67,6 +67,7 @@ body{
     border: 2px solid white;
     border-radius: 10px;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.3);
 }
 .container > .content > .form-container > .form-content > .text{ 
@@ -96,6 +97,7 @@ body{
     border: 2px solid black;
     border-radius: 10px;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 .container > .content > .form-container > .form-content > .entries > .input input{
     width: 100%;
@@ -144,6 +146,7 @@ body{
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
 }
 .container > .content > .footer > .bottom-row {
     display: grid;
