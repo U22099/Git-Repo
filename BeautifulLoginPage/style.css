@@ -164,3 +164,6 @@ body{
     color: pink;
     cursor: pointer;
 }
+.container > .content > .footer > .bottom-row a , a:hover{
+    color: white;
+}
