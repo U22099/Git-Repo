@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/homestyle.css">
+    <link rel="stylesheet" href="styles/media-queries.css">
+    <script>
+        var value = "visited";
+        localStorage.setItem("flag","visited");
+        localStorage.setItem("flag1","visited");
+        function chkpass(){
+            var code = document.getElementById("input");
+            if(code.value == "903357"||code.value =="557866"||code.value =="886754"){
+                window.open("https://antagonizing-incent.000webhostapp.com/decision.html", "_self");
+            }
+            else{
+                window.open("https://antagonizing-incent.000webhostapp.com/sorry.html", "_self");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="entry">
+                <input id= "input" type="password" placeholder="Enter Your Code">
+            </div>
+            <div class="btn">
+                <button onclick=chkpass()>Start</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

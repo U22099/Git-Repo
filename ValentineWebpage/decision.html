@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/decision.css">
+    <link rel="stylesheet" href="styles/mediadecision.css">
+    <script>
+        var value = localStorage.getItem("flag");
+        if(value != "visited"){
+            window.location = "index.html";
+        }
+        localStorage.removeItem("flag");
+        function movebutton(){
+            var x = Math.floor(Math.random()*screen.height-300);
+            var y = Math.floor(Math.random()*screen.width-150);
+            let no = document.querySelector('#no');
+            no.style.marginTop = `-${x}px`;
+            no.style.marginLeft = `-${y}px`;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="lovegif">
+                <img src="images/IMG_0564.PNG" alt="I LOVE YOU">
+            </div>
+            <div class="question">
+                <h1>Do You Love Me?</h1>
+            </div>
+            <div class="btns">
+                <div class="yes">
+                    <a href="lovemessage.html">Yes</a>
+                </div>
+                <div class="no">
+                    <button id="no" onclick="movebutton()">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

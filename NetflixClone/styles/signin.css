@@ -1,0 +1,101 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/IMG_0541.JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.container > .content{
+    display: grid;
+    grid-template-rows: 2fr 8fr;
+    width: 100%;
+    height: 100%;
+}
+.container > .content > .header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    width: 100%;
+}
+.container > .content > .header > .logo{
+    padding: 40px 0px 0px 60px;
+}
+.container > .content > .header > .logo img{
+    height: 60px;
+}
+.container > .content > .form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.container > .content > .form-container > .form-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    width: 350px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.container > .content > .form-container > .form-content > .text{
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+    height: 90px;
+}
+.container > .content > .form-container > .form-content > .input1 input{
+    margin: 0px 25px 0px 0px;
+    background-color: darkgrey;
+    width: 100%;
+    height: 45px;
+}
+.container > .content > .form-container > .form-content > .input2{
+    padding-top: 15px;
+}
+.container > .content > .form-container > .form-content > .input2 input{
+    margin: 0px 25px 0px 0px;
+    background-color: darkgrey;
+    width: 100%;
+    height: 45px;
+}
+.container > .content > .form-container > .form-content > .signin{
+    padding-top: 20px;
+}
+.container > .content > .form-container > .form-content > .signin a{
+    text-decoration: none;
+    font-size: 1.5em;
+    background-color: red;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 15px
+}
+.container > .content > .form-container > .form-content > .btn{
+    display: flex;
+    justify-content: space-between;
+}
+.container > .content > .form-container > .form-content > .btn > .chkbox label{
+    color: white;
+}
+.container > .content > .form-container > .form-content > .btn > .help a{
+    color: white;
+    text-decoration: none;
+}
+.container > .content > .form-container > .form-content > .textarea #fadetxt{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2em;
+}
+.container > .content > .form-container > .form-content > .textarea p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9em;
+}

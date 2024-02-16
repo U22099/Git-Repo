@@ -1,0 +1,94 @@
+.navigation-wrapper{
+    height: 190px;
+    background-color: #11122b;
+    color: #cbcbcb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 100px;    
+}
+/*Left Column*/
+.navigation-wrapper> .left-column{
+    display: flex;
+    align-items: center;
+}
+.navigation-wrapper> .left-column > .icon {
+    margin: 15px;
+}
+.navigation-wrapper> .left-column >.icon i{
+    font-size: 2em;
+}
+.left-column> .contact-hours{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+.navigation-wrapper > .left-column> .contact-hours > .hour{
+    font-size: 0.8em;
+    color: #858585;
+}
+/*Center Column*/
+.links-wrapper > .nav-link a{
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: white;
+}
+.navigation-wrapper > .centre-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 42px;
+    width: 500px;
+}
+.navigation-wrapper > .centre-column > .banner-image {
+    display: flex;
+    justify-content: center;
+}
+.navigation-wrapper > .centre-column > .banner-image img{
+    width: 216px;
+    height: 100%;
+}
+ .links-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .links-wrapper > .nav-link{
+    width: 70px;
+    text-align: center;
+}
+ .links-wrapper > .nav-link a{
+    font-family: "Ubuntu Condensed", sans-serif;
+    color: #cbcbcb;
+    text-decoration: none;
+    transition: 0.5s;
+}
+ .links-wrapper > .nav-link a:hover{
+    color: #cea135;
+    letter-spacing: 2px;
+}
+/*Right Column*/
+.navigation-wrapper > .right-column {
+    display: flex;
+    align-items: center;
+}
+.navigation-wrapper > .right-column > .address {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    text-align: right;
+}
+.navigation-wrapper > .right-column > .address a{
+    text-decoration: none;
+    color: #858585;
+    font-size: 0.9em;
+    transition: 0.5s;
+}
+.navigation-wrapper > .right-column > .address a:hover{
+    color: #cea135;
+}
+.navigation-wrapper > .right-column > .icon2 {
+    margin: 15px;
+    font-size: 2em;
+    transition: 0.5s;
+}
+.navigation-wrapper > .right-column > .icon2:hover{
+    color:#cea135;
+}

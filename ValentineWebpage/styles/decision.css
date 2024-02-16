@@ -1,0 +1,60 @@
+body{
+    margin: 0px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: pink;
+}
+.container > .content{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    text-align: center;
+}
+.container > .content > .lovegif img{
+    height: 200px;
+}
+.container > .content > .question h1{
+    font-family: fantasy;
+    font-weight: 700;
+}
+.container > .content > .btns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container > .content > .btns > .yes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container > .content > .btns > .yes a{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    background-color: #731561;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    font-family: cursive
+}
+.container > .content > .btns > .no{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container > .content > .btns > .no button{
+    text-decoration: none;
+    transition: 1s;
+    position: absolute;
+    color: white;
+    font-size: 2em;
+    background-color: #731561;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    font-family: cursive
+}

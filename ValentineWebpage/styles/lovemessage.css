@@ -1,0 +1,63 @@
+body{
+    margin: 0px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #6a1978;
+    
+}
+.container > .content{
+    background-image: url("../images/IMG_0575.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    height: 100%;
+    text-align: center;
+}
+.container > .content > .bgcontent{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 50px;
+}
+.container > .content > .bgcontent > .btnplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container > .content > .bgcontent > .btnplay button{
+    color: white;
+    font-size: 2em;
+    background-color: #731561;
+    height: 100px;
+    width: 200px;
+    border-radius: 10px;
+    font-family: cursive
+}
+.container > .content > .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+}
+.container > .content > .text h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4em;
+    color: mediumpurple;
+    letter-spacing: 1px;
+}
+.container > .content > .text p{
+    letter-spacing: 1px;
+    font-size: 1.3em;
+    font-family: 'Courier New', Courier, monospace;
+    color: #6b109c;
+    font-weight: 900;
+}

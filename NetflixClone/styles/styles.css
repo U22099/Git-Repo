@@ -1,0 +1,88 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/IMG_0542.JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.container > .content{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+.container > .content > .header{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    width: 100%;
+}
+.container > .content > .header > .logo{
+    padding: 40px 600px 0px 0px;
+}
+.container > .content > .header > .signin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px 0px 20px;
+    background-color: red;
+    border-radius: 10px;
+    height: 50px;
+    width: 120px;
+    text-align: center;
+}
+.container > .content > .header > .signin a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    font-weight: 500;
+}
+.container > .content > .header > .logo img{
+    height: 60px;
+}
+.container > .content > .body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 180px;
+}
+.container > .content > .body > .text-head{
+    color: white;
+    width: 100%;
+}
+.container > .content > .body > .text-head h1{
+    font-size: 3em;;
+}
+.container > .content > .body > .input{
+    width: 100%;
+}
+.container > .content > .body > .input input{
+    margin: 0px 25px 0px 0px;
+    background-color: darkgrey;
+    width: 300px;
+    height: 30px;
+}
+.container > .content > .body > .input a{
+    background-color: red;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}

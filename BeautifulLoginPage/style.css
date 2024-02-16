@@ -1,0 +1,147 @@
+body{
+    margin: 0px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(IMG_0113.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container > .content{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.container > .content > .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 0px 130px 0px 60px;
+    backdrop-filter: blur(10px);
+}
+.container > .content > .header > .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+.container > .content > .header > .menu > .menuitems a{
+    text-decoration: none;
+    color: white;
+}
+.container > .content > .header > .menu > .loginmenu{
+    border: 2px solid white;
+    border-radius: 3px;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container > .content > .header > .menu > .loginmenu a{
+    text-decoration: none;
+    color: white;
+}
+.container > .content > .form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container > .content > .form-container > .form-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    width: 500px;
+    height: 450px;
+    margin: 20px 0px;
+    padding: 5px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 30px 30px rgba(0,0,0,0.3);
+}
+.container > .content > .form-container > .form-content > .text{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin: 4px;
+}
+.container > .content > .form-container > .form-content > .text h1{ 
+    color: black;
+    font-size: 4em;
+}
+.container > .content > .form-container > .form-content > .entries{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.container > .content > .form-container > .form-content > .entries > .input{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+.container > .content > .form-container > .form-content > .entries > .input input{
+    width: 100%;
+    height: 100%;
+    color: black;
+    outline: none;
+    border: none;
+    font-size: 1.5em;
+    background-color: transparent;
+}
+.container > .content > .form-container > .form-content > .chkbox-passfrg{ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.container > .content > .form-container > .form-content > .chkbox-passfrg > .passfrg a{ 
+    color: black;
+}
+.container > .content > .form-container > .form-content > .loginbtn{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 400px;
+    margin: 0px 0px 0px 50px;
+    border-radius: 20px;
+}
+.container > .content > .form-container > .form-content > .loginbtn a{ 
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+.container > .content > .form-container > .form-content > .ps h2{ 
+    font-size: 1.2em;
+}
+.container > .content > .form-container > .form-content > .ps a{ 
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+}
+.container > .content > .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(30px);
+}

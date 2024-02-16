@@ -1,0 +1,89 @@
+/*Footer Styling*/
+.footer-wrapper{
+    height: 300px;
+    background-color: #11122b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-wrapper > .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    grid-gap: 5px;
+    font-family: "Ubuntu Condensed", sans-serif;
+    width: 500px;
+}
+.footer-wrapper > .content > .logo2{
+    display: flex;
+    justify-content: center;
+}
+.footer-wrapper > .content > .logo2 img{
+    width: 216px ;
+    height: 150px;
+    opacity: 0.49;
+
+}
+.footer-wrapper > .content > .contact {
+    display: flex;
+    justify-content: center;
+}
+.footer-wrapper > .content > .contact > .phone{
+    width: 150px;
+}
+.footer-wrapper > .content > .contact > .hour{
+    width: 200px;
+}
+.footer-wrapper > .content > .contact > .phone a{
+    display: grid;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #cbcbcb;
+    transition: 0.5s;
+}
+.footer-wrapper > .content > .contact > .hour a{
+    display: grid;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #cea135;
+}
+.footer-wrapper > .content > .contact > .phone a:hover{
+    color: #cea135;
+}
+.footer-wrapper > .content > .nav-links-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.footer-wrapper > .content > .nav-links-bottom > .nav-linksb{
+    width: 70px;
+    text-align: center;
+}
+.footer-wrapper > .content > .nav-links-bottom > .nav-linksb a{
+    color: #cbcbcb;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.footer-wrapper > .content > .nav-links-bottom > .nav-linksb a:hover{
+    color: #cea135;
+    letter-spacing: 2px;
+}
+.footer-wrapper > .content > .socialmedia-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+.footer-wrapper > .content > .socialmedia-links > .media-icon a{
+    font-size: 2em;
+    color: white;
+    transition: 0.5s;
+}
+.footer-wrapper > .content > .socialmedia-links > .media-icon a:hover{
+    color: #cea135;
+}
+.footer-wrapper > .content > .copyright{
+    color: #cbcbcb;
+}

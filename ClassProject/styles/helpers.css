@@ -1,0 +1,15 @@
+/*Helper Class*/
+.spacer100{
+    height: 60px;
+    width: 100%;
+}
+.anchor{
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+}
+.anchor h1::after{
+    font-family: "Font Awesome 6 Free";
+    content: " \f0c1";
+    font-weight: 900;
+}

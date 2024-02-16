@@ -1,0 +1,11 @@
+@media (max-width: 615px){
+    .container {
+        width: 100%;
+    }
+    .container > .content{
+        width: 100%;
+    }
+    .container > .content > .lovegif img{
+    width: 300px;
+}
+}

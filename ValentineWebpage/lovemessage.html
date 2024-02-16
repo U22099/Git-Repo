@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/lovemessage.css">
+    <link rel="stylesheet" href="styles/querymsg.css">
+    <script>
+        var value = localStorage.getItem("flag1");
+        if(value != "visited"){
+            window.location = "index.html";
+        }
+        localStorage.removeItem("flag1");
+        function play(){
+            var audio = document.getElementById("aud");          
+            audio.play();           
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="bgcontent">
+                <div class="bgmusic">
+                    <audio src="music/bgmusic.mp3" id="aud" hidden></audio>
+                </div>
+                <div class="btnplay">
+                    <button onclick="play()">Play Music</button>
+                </div>
+            </div>
+            <div class="img">
+                <img src="images/IMG_0558.PNG" alt="">
+            </div>
+            <div class="text">
+                <h1>My Love Message To You</h1>
+                <p>WITH EACH PASSING DAY, MY LOVE FOR YOU GROWS STRONGER AND DEEPER, YOUR SMILE BRIGHTENS MY WORLD,
+                    SHATTERS MY THOUGHT AND MAKES ME LOOSE TRACK OF TIME. I NEVER GET SATISFIED BUT DROOL FOR MORE
+                    OF YOU. YOU CAGE MY HEART LIKE A BIRD WITH ONE LOOK FROM YOU. EVERY SINGLE TOUCH OF YOURS INGNITES 
+                    A FIRE WITHIN ME THAT REFUSE TO DIE. YOU HAVE TAKEN COMPLETE CONTROL OF ME BUT TO BE SINCERE
+                    I CANNOT PROTEST NOT BECAUSE I CAN'T BUT BECAUSE I WON'T. KNOWING YOU HAS BEEN THE GREATEST ACHIEVEMENT
+                    IN MY LIFE.
+                    I LOVE YOU DARLING.
+                </p>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>

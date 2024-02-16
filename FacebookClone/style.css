@@ -1,0 +1,296 @@
+body{
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+hr{
+    border-width: medium;
+    border-color: grey;
+    border-style: solid;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: bisque;
+}
+.container > .content{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 700px;
+    background-color: #ffffffaf;
+}
+.container > .content > .header {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+    height: 100px;
+}
+.container > .content > .header > .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    height: 50px;
+}
+.container > .content > .header > .top h1{
+    color: blue;
+    font-family: fantasy;
+    font-weight: 100;
+    font-size: 2.7em
+}
+.container > .content > .header > .top > .items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    grid-gap: 20px;
+    padding: 2px;
+}
+.container > .content > .header  > .top > .items i{
+    font-size: 1.7em;
+}
+.container > .content > .header > .down{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px;
+    height: 50px;
+}
+.container > .content > .header > .down{
+    font-size: 1.7em;
+}
+.container > .content > .post-section{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    height: 40px;
+    padding: 10px 30px;
+    grid-gap: 30px;
+}
+.container > .content > .post-section input{
+    border: none;
+    background-color: #ffffffaf;
+    border-radius: 30px;
+    outline-color: white;
+    font-size: 1.2em;
+    padding: 10px 30px;
+}
+.container > .content > .post-section img{
+    background-color: blue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.container > .content > .post-section i{
+    margin-left: 30px;
+    font-size: 1.7em;
+}
+.container > .content > .status-section{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    padding: 10px 30px;
+}
+.container > .content > .status-section > .mystry{
+    background-color: blue;
+    height: 100%;
+    border-radius: 30px;
+    width: 130px;
+    position: relative;
+}
+.container > .content > .status-section > .mystry img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.container > .content > .status-section > .mystry > .tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: blue;
+    width: 30px;
+    height: 40px;
+    text-align: center;
+}
+.container > .content > .status-section > .mystry > .name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    width: 30px;
+    height: 40px;
+    color: white;
+    text-align: center;
+}
+.container > .content > .status-section > .stry1{
+    background-color: blue;
+    height: 100%;
+    border-radius: 30px;
+    width: 130px;
+    position: relative;
+}
+.container > .content > .status-section > .stry1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.container > .content > .status-section > .stry1 > .tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: blue;
+    width: 30px;
+    height: 40px;
+    text-align: center;
+}
+.container > .content > .status-section > .stry1 > .name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    width: 30px;
+    height: 40px;
+    color: white;
+    text-align: center;
+}
+.container > .content > .status-section > .stry2{
+    background-color: blue;
+    height: 100%;
+    border-radius: 30px;
+    width: 130px;
+    position: relative;
+}
+.container > .content > .status-section > .stry2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.container > .content > .status-section > .stry2 > .tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: blue;
+    width: 30px;
+    height: 40px;
+    text-align: center;
+}
+.container > .content > .status-section > .stry2 > .name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    width: 30px;
+    height: 40px;
+    color: white;
+    text-align: center;
+}
+.container > .content > .status-section > .stry3{
+    background-color: blue;
+    height: 100%;
+    border-radius: 30px;
+    width: 130px;
+    position: relative;
+}
+.container > .content > .status-section > .stry3 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.container > .content > .status-section > .stry3 > .tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: blue;
+    width: 30px;
+    height: 40px;
+    text-align: center;
+}
+.container > .content > .status-section > .stry3 > .name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    width: 30px;
+    height: 40px;
+    color: white;
+    text-align: center;
+}
+.container > .content > .posts-section > .post-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.container > .content > .posts-section > .post-container > .post-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+.container > .content > .posts-section > .post-container > .post-content > .poster-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container > .content > .posts-section > .post-container > .post-content > .poster-info img{
+    width: 70px;
+    height: 50px;
+    border-radius: 5px;
+}
+.container > .content > .posts-section > .post-container > .post-content > .poster-info h1{
+    font-size: 1.7em;
+    width: 550px;
+}
+.container > .content > .posts-section > .post-container > .post-content > .post{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container > .content > .posts-section > .post-container > .post-content > .emojis{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+.container > .content > .posts-section > .post-container > .post-content > .reaction{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container > .content > .posts-section > .post-container > .post-content > .reaction > .like , .comment , .share{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+}
+.container > .content > .posts-section > .post-container > .post-content > .reaction > .like i, .comment i, .share i{
+    font-size: 1.6em;
+}
