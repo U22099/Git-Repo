@@ -145,3 +145,18 @@ body{
     align-items: center;
     backdrop-filter: blur(30px);
 }
+.container > .content > .footer > .bottom-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 32px;
+}
+.container > .content > .footer > .bottom-row i{
+    font-size: 2em;
+    transition: 0.8s;
+}
+.container > .content > .footer > .bottom-row i:hover, i:visited{
+    color: pink;
+    cursor: pointer;
+}
