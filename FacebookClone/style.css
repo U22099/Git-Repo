@@ -35,7 +35,7 @@ hr{
 }
 .container > .content > .header > .top h1{
     color: blue;
-    font-family: fantasy;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 100;
     font-size: 2.7em
 }
@@ -89,12 +89,15 @@ hr{
     justify-content: space-between;
     height: 200px;
     padding: 10px 30px;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .container > .content > .status-section > .mystry{
     background-color: blue;
     height: 100%;
     border-radius: 30px;
     width: 130px;
+    margin: 10px;
     position: relative;
 }
 .container > .content > .status-section > .mystry img{
@@ -131,6 +134,7 @@ hr{
 .container > .content > .status-section > .stry1{
     background-color: blue;
     height: 100%;
+    margin: 10px;
     border-radius: 30px;
     width: 130px;
     position: relative;
@@ -171,6 +175,7 @@ hr{
     height: 100%;
     border-radius: 30px;
     width: 130px;
+    margin: 10px;
     position: relative;
 }
 .container > .content > .status-section > .stry2 img{
@@ -207,6 +212,7 @@ hr{
 .container > .content > .status-section > .stry3{
     background-color: blue;
     height: 100%;
+    margin: 10px;
     border-radius: 30px;
     width: 130px;
     position: relative;

@@ -15,17 +15,37 @@
         width: 95%;
         padding: 10px 5px;
     }
-    .container > .content > .status-section > .mystry{
-        width: 20%;
+    .container > .content > .status-section > .mystry {
+        width: 100px;
+        border-radius: 5px;
+    }
+    .container > .content > .status-section > .mystry img{
+        width: 100px;
+        border-radius: 5px;
     }
     .container > .content > .status-section > .stry1{
-        width: 20%;
+        width: 100px;
+        border-radius: 5px;
+    }
+    .container > .content > .status-section > .stry1 img{
+        width: 100px;
+        border-radius: 5px;
     }
     .container > .content > .status-section > .stry2{
-        width: 20%;
+        width: 100px;
+        border-radius: 5px;
+    }
+    .container > .content > .status-section > .stry2 img{
+        width: 100px;
+        border-radius: 5px;
     }
     .container > .content > .status-section > .stry3{
-        width: 20%;
+        width: 100px;
+        border-radius: 5px;
+    }
+    .container > .content > .status-section > .stry3 img{
+        width: 100px;
+        border-radius: 5px;
     }
     .container > .content > .post-section {
         width: 100%;
