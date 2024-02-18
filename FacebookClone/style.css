@@ -35,7 +35,7 @@ hr{
 }
 .container > .content > .header > .top h1{
     color: blue;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-size: 2.7em
 }
@@ -47,7 +47,7 @@ hr{
     padding: 2px;
 }
 .container > .content > .header  > .top > .items i{
-    font-size: 1.7em;
+    font-size: 1.4em;
 }
 .container > .content > .header > .down{
     display: flex;
@@ -57,7 +57,7 @@ hr{
     height: 50px;
 }
 .container > .content > .header > .down{
-    font-size: 1.7em;
+    font-size: 1.4em;
 }
 .container > .content > .post-section{
     display: grid;
@@ -82,14 +82,14 @@ hr{
 }
 .container > .content > .post-section i{
     margin-left: 30px;
-    font-size: 1.7em;
+    font-size: 1.4em;
 }
 .container > .content > .status-section{
     display: flex;
     justify-content: space-between;
     height: 200px;
     padding: 10px 30px;
-    overflow: hidden;
+    overflow: auto;
     white-space: nowrap;
 }
 .container > .content > .status-section > .mystry{

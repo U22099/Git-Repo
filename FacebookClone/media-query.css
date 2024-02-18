@@ -10,6 +10,7 @@
     }
     .container > .content > .header{
         padding: 10px 0px;
+        width: 100%;
     }
     .container > .content > .status-section {
         width: 95%;
