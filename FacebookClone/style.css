@@ -93,6 +93,7 @@ hr{
     height: 200px;
     padding: 10px 30px;
     overflow: auto;
+    overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     white-space: nowrap;
 }
