@@ -93,6 +93,7 @@ hr{
     height: 200px;
     padding: 10px 30px;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
     white-space: nowrap;
 }
 .container > .content > .status-section > .mystry{
