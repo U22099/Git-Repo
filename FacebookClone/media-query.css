@@ -1,4 +1,7 @@
 @media (max-width: 615px){
+    body{
+        width: 98%;
+    }
     .container{
         width: 100%;
     }
