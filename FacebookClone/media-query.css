@@ -1,12 +1,12 @@
 @media (max-width: 615px){
     body{
-        width: 98%;
+        width: 100%;
     }
     .container{
         width: 100%;
     }
     .container > .content{
-        width: 90%;
+        width: 100%;
         padding: 10px;
     }
     .container > .content > .break-lines{
