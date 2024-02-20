@@ -2,9 +2,6 @@
     body{
         width: 98%;
     }
-    hr{
-        width: 100%;
-    }
     .container{
         width: 100%;
     }
@@ -13,7 +10,7 @@
         padding: 10px;
     }
     .container > .content > .break-lines{
-        width: 100%;
+        width: 150%;
     }
     .container > .content > .post-section i{
         margin: 0px;
