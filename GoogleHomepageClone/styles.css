@@ -116,11 +116,33 @@ body{
     color: red;
 }
 @media (max-width: 615px){
+    .container{
+        width: 100%
+    }
+    .container > .content{
+        width: 100%;
+    }
     .container > .content > .entry-box > .box{
         width: 300px;
+        padding: 0px 20px;
     }
     .container > .content > .google-image img{
         font-size: 0.6em;
         margin-top: 150px;
+    }
+    .container > .content > .entry-box > .box i{
+        font-size: 1em;
+    }
+    .container > .content > .icons > .icon-cont > .facebook i{
+        font-size: 2em;
+    }
+    .container > .content > .icons > .icon-cont > .whatsapp i{
+        font-size: 2em;
+    }
+    .container > .content > .icons > .icon-cont > .pinteresti{
+        font-size: 2em;
+    }
+    .container > .content > .icons > .icon-cont > .instagram i{
+        font-size: 2em;
     }
 }
