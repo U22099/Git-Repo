@@ -1,0 +1,13 @@
+body{
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container > .content img{
+    width: 200px;
+}
+.container > .content a{
+    width: 100px;
+    display: flex;
+    font-size: 1.5em;
+    color: blue
+}

@@ -7,21 +7,32 @@
     }
     .container > .content{
         width: 100%;
-        padding: 10px;
+        padding: 10px 0px 10px 10px;
     }
     .container > .content > .break-lines{
         width: 100%;
     }
+    .container > .content > .post-section {
+        padding: 10px 0px;    
+    }
     .container > .content > .post-section i{
         margin: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center
+    }
+    .container > .content > .post-section input{
+        width: 70%;
+        font-size: 0.9em
     }
     .container > .content > .header{
         padding: 10px 0px;
         width: 100%;
     }
     .container > .content > .status-section {
-        width: 95%;
-        padding: 10px 5px;
+        width: 96%;
+        padding: 10px 0px;
     }
     .container > .content > .status-section > .mystry {
         width: 100px;
@@ -55,22 +66,28 @@
         width: 100px;
         border-radius: 5px;
     }
-    .container > .content > .post-section {
-        width: 100%;
-        padding: 10px 0px;
+    .container > .content > .posts-section{
+        width: 98%;
     }
     .container > .content > .posts-section > .post-container{
-        width: 95%;
-        padding: 20px 10px;
+        width: 100%;
+        padding: 0px;
     }
     .container > .content > .posts-section > .post-container > .post-content{
         width: 100%;
     }
     .container > .content > .posts-section > .post-container > .post-content > .poster-info{
-        width: 100%;
+        width: 93%;
     }
     .container > .content > .posts-section > .post-container > .post-content > .poster-info h1{
         width: 70%;
+    }
+    .container > .content > .posts-section > .post-container > .post-content > .post{
+        width: 93%;
+        padding: 0px 10px;
+    }
+    .container > .content > .posts-section > .post-container > .post-content > .emojis{
+        width: 93%;
     }
     .container > .content > .posts-section > .post-container > .post-content > .post h1{
         width: 90%;
