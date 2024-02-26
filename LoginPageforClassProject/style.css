@@ -6,7 +6,7 @@
     padding: 30px;
     height: 100vh;
 }
-.content{
+.container > .content{
     display: grid;
     grid-template-columns: 1fr;
     background-color: rgb(17, 18, 43);
@@ -62,4 +62,12 @@
 }
 .container > .content > .signup a:hover{
     color: white;
+}
+@media (max-width: 615px){
+    .container > .content{
+        padding: 0px;
+    }
+    .container > .content > .signup{
+        margin: 20px 40px 50px 40px;
+    }
 }

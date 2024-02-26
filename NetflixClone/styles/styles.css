@@ -74,7 +74,7 @@ body{
     width: 300px;
     height: 30px;
 }
-.container > .content > .body > .input a{
+.container > .content > .body > .input button{
     background-color: red;
     display: inline-flex;
     justify-content: center;
@@ -85,4 +85,16 @@ body{
     text-decoration: none;
     color: white;
     font-weight: 700;
+}
+@media (max-width: 615px){
+    .container > .content > .header > .logo {
+        padding: 40px 60px 0px 0px;
+    }
+    .container > .content > .body > .input input {
+        width: 350px;
+        height: 40px;
+    }
+    .container > .content > .body > .input button {
+        margin-top: 30px;
+    }
 }

@@ -99,3 +99,14 @@
     text-decoration: none;
     font-size: 1.3em
 }
+@media (max-width: 615px){
+    .container > .content > .input1 input{
+        height: 40px;
+    }
+    .container > .content > .input2 input{
+        height: 40px;
+    }
+    .container > .content > .note p{
+        display: grid;
+    }
+}
