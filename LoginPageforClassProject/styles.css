@@ -2,7 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-image: url(bgparallex.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 30px;
     height: 100vh;
 }
