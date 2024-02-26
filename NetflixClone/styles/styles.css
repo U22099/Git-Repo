@@ -88,10 +88,10 @@ body{
 }
 @media (max-width: 615px){
     .container > .content > .header > .logo {
-        padding: 40px 60px 0px 0px;
+        padding: 40px 0px 0px 0px;
     }
     .container > .content > .body > .input input {
-        width: 350px;
+        width: 280px;
         height: 40px;
     }
     .container > .content > .body > .input button {

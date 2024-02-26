@@ -99,3 +99,8 @@ body{
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.9em;
 }
+@media (max-width: 615px){
+    .container > .content > .form-container > .form-content {
+        width: 100%;
+    }
+}
