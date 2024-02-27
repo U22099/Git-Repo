@@ -135,7 +135,7 @@ body{
         height: 100%;
         font-size: 2em;
         width: max-content;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-family: monospace, impact;
         letter-spacing: -0.5px;
         display: flex;
         align-items: center;
