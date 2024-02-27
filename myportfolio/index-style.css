@@ -126,7 +126,7 @@ body{
 @media (max-width: 615px){
     .container > .content > .txt > .head {
         margin-top: 60px;
-        width: 272px;
+        width: 300px;
         height: 90px;
     }
     .container > .content > .txt > .head h2 {
