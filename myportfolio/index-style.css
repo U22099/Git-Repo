@@ -128,12 +128,13 @@ body{
     }
     .container > .content > .txt > .head {
         margin-top: 60px;
-        width: 320px;
+        width: max-content;
         height: 90px;
     }
     .container > .content > .txt > .head h2 {
         height: 100%;
         font-size: 2em;
+        width: max-content;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         letter-spacing: -0.5px;
         display: flex;
@@ -142,6 +143,8 @@ body{
     .container > .content > .txt > .head h1 {
         height: 100%;
         font-size: 2.2em;
+        width: max-content;
+        letter-spacing: -0.5px;
         display: flex;
         align-items: center;
         justify-content: center
