@@ -128,25 +128,26 @@ body{
     }
     .container > .content > .txt > .head {
         margin-top: 60px;
-        width: max-content;
+        width: calc(100% - 10px);
         height: 90px;
     }
     .container > .content > .txt > .head h2 {
         height: 100%;
-        font-size: 2em;
-        width: max-content;
+        font-size: 1.5em;
+        width: 100%;
         font-family: monospace, impact;
         letter-spacing: -0.5px;
         display: flex;
         align-items: center;
+        justify-content: flex-end;
     }
     .container > .content > .txt > .head h1 {
         height: 100%;
-        font-size: 2.2em;
-        width: max-content;
+        font-size: 1.5em;
+        width: 100%;
         letter-spacing: -0.5px;
         display: flex;
         align-items: center;
-        justify-content: center
+        justify-content: flex-end;
     }
 }
