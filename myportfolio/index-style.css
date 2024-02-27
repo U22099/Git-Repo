@@ -93,7 +93,6 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: -webkit-fill-available;
     background-color: black;
     color: white;
 }
@@ -124,15 +123,18 @@ body{
     }
 }
 @media (max-width: 615px){
+    .container > .content{
+        height: 100vh;
+    }
     .container > .content > .txt > .head {
         margin-top: 60px;
-        width: 300px;
+        width: 320px;
         height: 90px;
     }
     .container > .content > .txt > .head h2 {
         height: 100%;
         font-size: 2em;
-        font-family: monospace;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         display: flex;
         align-items: center;
     }
