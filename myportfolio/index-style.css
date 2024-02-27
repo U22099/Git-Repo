@@ -99,7 +99,7 @@ body{
 }
 .container > .content > .about-section p{
     font-family: 'Times New Roman', Times, serif;
-    animation: transview 8s linear;
+    animation: transview 5s linear;
     opacity: 1;
 }
 @keyframes transview{
