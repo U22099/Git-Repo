@@ -65,6 +65,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
     margin-bottom: 100px;
 }
 .container > .content > .btn a {
@@ -128,8 +129,7 @@ body{
     }
     .container > .content > .txt > .head {
         margin-top: 60px;
-        width: calc(100% - 10px);
-        padding: 0px 20px;
+        width: calc(100% - 30px);
         height: 90px;
     }
     .container > .content > .txt > .head h2 {
