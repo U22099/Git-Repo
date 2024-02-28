@@ -85,11 +85,12 @@ body{
 .container > .content > .box-container > .box > .txt > .brief-description p{
     color: white;
 }
-@media (width: 615px){
+@media (max-width: 615px){
     .container{
         height: 100%;
     }
     .container > .content{
+        display: grid;
         grid-template-columns: 1fr;
     }
 }
