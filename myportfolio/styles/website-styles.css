@@ -84,3 +84,8 @@ body{
 .container > .content > .box-container > .box > .txt > .brief-description p{
     color: white;
 }
+@media (width: 615px){
+    .container > .content{
+        grid-template-columns: 2fr;
+    }
+}
