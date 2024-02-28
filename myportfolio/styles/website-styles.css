@@ -90,5 +90,6 @@ body{
         display: grid;
         grid-template-columns: 1fr;
         height: 100%;
+        margin-top: 300px;
     }
 }
