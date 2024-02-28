@@ -85,7 +85,10 @@ body{
     color: white;
 }
 @media (width: 615px){
+    .container{
+        height: 100%;
+    }
     .container > .content{
-        grid-template-columns: 2fr;
+        grid-template-columns: 1fr;
     }
 }
