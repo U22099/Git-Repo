@@ -107,7 +107,7 @@ body{
         width: 100%;
     }
     .container > .content > .header > .logo{
-        padding: 15px 0px 0px 35px;
+        padding: 5px 0px 0px 5px;
     }
     .container > .content > .form-container > .form-content > .input1 input{
         background-color: white;
