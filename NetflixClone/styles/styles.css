@@ -87,6 +87,9 @@ body{
     font-weight: 700;
 }
 @media (max-width: 615px){
+    .container{
+        height: 500px;
+    }
     .container > .content > .header > .logo {
         padding: 40px 0px 0px 0px;
     }

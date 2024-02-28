@@ -100,6 +100,9 @@ body{
     font-size: 0.9em;
 }
 @media (max-width: 615px){
+    .container{
+        height: 500px;
+    }
     .container > .content > .form-container > .form-content {
         width: 100%;
     }
