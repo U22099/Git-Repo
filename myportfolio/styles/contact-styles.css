@@ -96,7 +96,11 @@ body{
     text-align: center;
 }
 .container > .content > .header > .contacts > .content > .mail-contents > .icons i{
-    font-size: 2em;
+    font-size: 3.4em;
+    color: black;
+    height: 100%;
+    text-align: center;
+    width: 100%
 }
 .container > .content > .header > .contacts > .content > .mail-contents > .mails{
     display: grid;
