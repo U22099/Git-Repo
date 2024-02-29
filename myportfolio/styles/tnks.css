@@ -1,0 +1,71 @@
+body{
+    margin: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../images/background-images/IMG_0715.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container > .content{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+.container > .content > .head i{
+    font-size: 5em;
+    color: white;
+}
+.container > .content > .head h1{
+    font-size: 4em;
+    color: white;
+    background-color: black;
+    padding: 40px;
+    border-radius: 20px;
+    font-family: serif;
+    margin-bottom: 5px;
+}
+.container > .content > .head p{
+    margin: 0px 0px 20px 0px;
+    color: white;
+    font-size: 2em;
+}
+.container > .content > .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.container > .content > .btn a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 20px;
+    font-size: 1.5em;
+    transition: 0.5s;
+}
+.container > .content > .btn a:hover{
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.8);
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+.container > .content > .btn i{
+    margin-right: 10px;
+    color: black;
+}
+@media (max-width: 615px){
+    .container > .content > .head h1{
+        font-size: 3.5em;
+        padding: 10px;
+    }
+    .container > .content > .btn a{
+        box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.8);
+        font-weight: 900;
+    }
+}
