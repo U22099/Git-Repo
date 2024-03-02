@@ -36,7 +36,7 @@ window.onload = function (){
     click = new Audio();
 }
 function no1(){
-    click.src = "assets/aud2.wav";
+    click.src = "assets/aud1.wav";
     click.play();
     if (pressed){
         output.innerText = "";
@@ -50,7 +50,7 @@ function no1(){
     y = output.innerText;
 }
 function no2(){
-    click.src = "assets/aud2.wav";
+    click.src = "assets/aud1.wav";
     click.play();
     if (pressed){
         output.innerText = "";
@@ -64,7 +64,7 @@ function no2(){
     y = output.innerText;
 }
 function no3(){
-    click.src = "assets/aud2.wav";
+    click.src = "assets/aud1.wav";
     click.play();
     if (pressed){
         output.innerText = "";
@@ -78,7 +78,7 @@ function no3(){
     y = output.innerText;
 }
 function no4(){
-    click.src = "assets/aud2.wav";
+    click.src = "assets/aud1.wav";
     click.play();
     if (pressed){
         output.innerText = "";
@@ -92,7 +92,7 @@ function no4(){
     y = output.innerText;
 }
 function no5(){
-    click.src = "assets/aud2.wav";
+    click.src = "assets/aud1.wav";
     click.play();
     if (pressed){
         output.innerText = "";
@@ -106,7 +106,7 @@ function no5(){
     y = output.innerText;
 }
 function no6(){
-    click.src = "assets/aud2.wav";
+    click.src = "assets/aud1.wav";
     click.play();
     if (pressed){
         output.innerText = "";
@@ -120,7 +120,7 @@ function no6(){
     y = output.innerText;
 }
 function no7(){
-    click.src = "assets/aud2.wav";
+    click.src = "assets/aud1.wav";
     click.play();
     if (pressed){
         output.innerText = "";
@@ -134,7 +134,7 @@ function no7(){
     y = output.innerText;
 }
 function no8(){
-    click.src = "assets/aud2.wav";
+    click.src = "assets/aud1.wav";
     click.play();
     if (pressed){
         output.innerText = "";
@@ -148,7 +148,7 @@ function no8(){
     y = output.innerText;
 }
 function no9(){
-    click.src = "assets/aud2.wav";
+    click.src = "assets/aud1.wav";
     click.play();
     if (pressed){
         output.innerText = "";
@@ -162,7 +162,7 @@ function no9(){
     y = output.innerText;
 }
 function no0(){
-    click.src = "assets/aud2.wav";
+    click.src = "assets/aud1.wav";
     click.play();
     if (pressed){
         output.innerText = "";
@@ -176,7 +176,7 @@ function no0(){
     y = output.innerText;
 }
 function dot(){
-    click.src = "assets/aud2.wav";
+    click.src = "assets/aud1.wav";
     click.play();
     if (pressed){
         output.innerText = "";
@@ -187,7 +187,7 @@ function dot(){
     y = output.innerText;
 }
 function ac(){
-    click.src = "assets/aud2.wav";
+    click.src = "assets/aud1.wav";
     click.play();
     if(clear.innerText == "AC"){
         z = "0";
@@ -196,7 +196,7 @@ function ac(){
     output.innerText = "0";
 }
 function abs(){
-    click.src = "assets/aud2.wav";
+    click.src = "assets/aud1.wav";
     click.play();
     if (pressed){
         output.innerText = "-0";
@@ -212,7 +212,7 @@ function abs(){
     y = output.innerText;
 }
 function pct(){
-    click.src = "assets/aud2.wav";
+    click.src = "assets/aud1.wav";
     click.play();
     pressed = true;
     let pctx = output.innerText;
@@ -221,35 +221,35 @@ function pct(){
     y = output.innerText;
 }
 function div(){
-    click.src = "assets/aud2.wav";
+    click.src = "assets/aud1.wav";
     click.play();
     pressed = true;
     x = output.innerText;
     sign = "/";
 }
 function mul(){
-    click.src = "assets/aud2.wav";
+    click.src = "assets/aud1.wav";
     click.play();
     pressed = true;
     x = output.innerText;
     sign = "*";
 }
 function add(){
-    click.src = "assets/aud2.wav";
+    click.src = "assets/aud1.wav";
     click.play();
     pressed = true;
     x = output.innerText;
     sign = "+";
 }
 function min(){
-    click.src = "assets/aud2.wav";
+    click.src = "assets/aud1.wav";
     click.play();
     pressed = true;
     x = output.innerText;
     sign = "-";
 }
 function equals(){
-    click.src = "assets/aud2.wav";
+    click.src = "assets/aud1.wav";
     click.play();
     pressed = true;
     if(sign == "+"){
