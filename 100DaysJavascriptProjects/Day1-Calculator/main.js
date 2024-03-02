@@ -42,7 +42,7 @@ function no1(){
         output.innerText = "";
     }
     clear.innerText = "C";
-    output.innerText += one.innerText;
+    output.innerText += "1";
     y = output.innerText;
 }
 function no2(){
@@ -54,7 +54,7 @@ function no2(){
         output.innerText = "";
     }
     clear.innerText = "C";
-    output.innerText += two.innerText;
+    output.innerText += "2";
     y = output.innerText;
 }
 function no3(){
@@ -66,7 +66,7 @@ function no3(){
         output.innerText = "";
     }
     clear.innerText = "C";
-    output.innerText += three.innerText;
+    output.innerText += "3";
     y = output.innerText;
 }
 function no4(){
@@ -78,7 +78,7 @@ function no4(){
         output.innerText = "";
     }
     clear.innerText = "C";
-    output.innerText += four.innerText;
+    output.innerText += "4";
     y = output.innerText;
 }
 function no5(){
@@ -90,7 +90,7 @@ function no5(){
         output.innerText = "";
     }
     clear.innerText = "C";
-    output.innerText += five.innerText;
+    output.innerText += "5";
     y = output.innerText;
 }
 function no6(){
@@ -102,7 +102,7 @@ function no6(){
         output.innerText = "";
     }
     clear.innerText = "C";
-    output.innerText += six.innerText;
+    output.innerText += "6";
     y = output.innerText;
 }
 function no7(){
@@ -114,7 +114,7 @@ function no7(){
         output.innerText = "";
     }
     clear.innerText = "C";
-    output.innerText += seven.innerText;
+    output.innerText += "7";
     y = output.innerText;
 }
 function no8(){
@@ -126,7 +126,7 @@ function no8(){
         output.innerText = "";
     }
     clear.innerText = "C";
-    output.innerText += eight.innerText;
+    output.innerText += "8";
     y = output.innerText;
 }
 function no9(){
@@ -138,7 +138,7 @@ function no9(){
         output.innerText = "";
     }
     clear.innerText = "C";
-    output.innerText += nine.innerText;
+    output.innerText += "9";
     y = output.innerText;
 }
 function no0(){
@@ -150,7 +150,7 @@ function no0(){
         output.innerText = "";
     }
     clear.innerText = "C";
-    output.innerText += zero.innerText;
+    output.innerText += "0";
     y = output.innerText;
 }
 function dot(){
@@ -159,7 +159,7 @@ function dot(){
         pressed = false;
     }
     clear.innerText = "C";
-    output.innerText += dotw.innerText;
+    output.innerText += ".";
     y = output.innerText;
 }
 function ac(){
