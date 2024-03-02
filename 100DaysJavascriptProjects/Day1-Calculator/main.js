@@ -18,6 +18,7 @@ let z;
 let pressed = false;
 let absolute;
 let output;
+let click;
 window.onload = function (){
     one = document.querySelector(".one");
     two = document.querySelector(".two");
@@ -32,8 +33,11 @@ window.onload = function (){
     dotw = document.querySelector(".dot");
     clear = document.querySelector("#ac");;
     output = document.querySelector(".output");
+    click = new Audio();
+    click.src = "assets/aud1.wav";
 }
 function no1(){
+    click.play();
     if (pressed){
         output.innerText = "";
         pressed = false;
@@ -58,6 +62,7 @@ function no2(){
     y = output.innerText;
 }
 function no3(){
+    click.play();
     if (pressed){
         output.innerText = "";
         pressed = false;
@@ -70,6 +75,7 @@ function no3(){
     y = output.innerText;
 }
 function no4(){
+    click.play();
     if (pressed){
         output.innerText = "";
         pressed = false;
@@ -82,6 +88,7 @@ function no4(){
     y = output.innerText;
 }
 function no5(){
+    click.play();
     if (pressed){
         output.innerText = "";
         pressed = false;
@@ -94,6 +101,7 @@ function no5(){
     y = output.innerText;
 }
 function no6(){
+    click.play();
     if (pressed){
         output.innerText = "";
         pressed = false;
@@ -118,6 +126,7 @@ function no7(){
     y = output.innerText;
 }
 function no8(){
+    click.play();
     if (pressed){
         output.innerText = "";
         pressed = false;
@@ -130,6 +139,7 @@ function no8(){
     y = output.innerText;
 }
 function no9(){
+    click.play();
     if (pressed){
         output.innerText = "";
         pressed = false;
@@ -142,6 +152,7 @@ function no9(){
     y = output.innerText;
 }
 function no0(){
+    click.play();
     if (pressed){
         output.innerText = "";
         pressed = false;
@@ -154,6 +165,7 @@ function no0(){
     y = output.innerText;
 }
 function dot(){
+    click.play();
     if (pressed){
         output.innerText = "";
         pressed = false;
@@ -163,6 +175,7 @@ function dot(){
     y = output.innerText;
 }
 function ac(){
+    click.play();
     if(clear.innerText == "AC"){
         z = "0";
     }
@@ -170,6 +183,7 @@ function ac(){
     output.innerText = "0";
 }
 function abs(){
+    click.play();
     if (pressed){
         output.innerText = "-0";
         pressed = false;
@@ -184,6 +198,7 @@ function abs(){
     y = output.innerText;
 }
 function pct(){
+    click.play();
     pressed = true;
     let pctx = output.innerText;
     let pcty = parseFloat(pctx) / 100;
@@ -191,26 +206,31 @@ function pct(){
     y = output.innerText;
 }
 function div(){
+    click.play();
     pressed = true;
     x = output.innerText;
     sign = "/";
 }
 function mul(){
+    click.play();
     pressed = true;
     x = output.innerText;
     sign = "*";
 }
 function add(){
+    click.play();
     pressed = true;
     x = output.innerText;
     sign = "+";
 }
 function min(){
+    click.play();
     pressed = true;
     x = output.innerText;
     sign = "-";
 }
 function equals(){
+    click.play();
     pressed = true;
     if(sign == "+"){
         z =  parseFloat(x)+ parseFloat(y);

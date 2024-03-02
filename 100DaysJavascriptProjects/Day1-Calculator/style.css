@@ -6,7 +6,10 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: white;
+    background-image: url("assets/ocean.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container > .content{
     display: grid;
@@ -24,9 +27,9 @@ body{
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    /*overflow-x: auto;
+    overflow-x: auto;
     white-space: nowrap;
-    -webkit-overflow-scrolling: touch;*/
+    -webkit-overflow-scrolling: touch;
 }
 .container > .content > .output-div h1{
     display: flex;
