@@ -24,9 +24,9 @@ body{
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    overflow-x: auto;
+    /*overflow-x: auto;
     white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;*/
 }
 .container > .content > .output-div h1{
     display: flex;
