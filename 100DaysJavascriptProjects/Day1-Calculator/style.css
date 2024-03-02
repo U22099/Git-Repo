@@ -24,7 +24,7 @@ body{
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    overflow: auto;
+    overflow-x: auto;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
 }
