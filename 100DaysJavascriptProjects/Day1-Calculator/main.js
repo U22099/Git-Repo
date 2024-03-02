@@ -163,6 +163,9 @@ function dot(){
     y = output.innerText;
 }
 function ac(){
+    if(clear.innerText == "AC"){
+        z = "0";
+    }
     clear.innerText = "AC";
     output.innerText = "0";
 }
