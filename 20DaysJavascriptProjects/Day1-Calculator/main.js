@@ -12,6 +12,7 @@ let dotw;
 let clear;
 let absx;
 let sign;
+let smalloutput;
 let x;
 let y;
 let z;
@@ -33,6 +34,7 @@ window.onload = function (){
     dotw = document.querySelector(".dot");
     clear = document.querySelector("#ac");;
     output = document.querySelector(".output");
+    smalloutput = document.querySelector(".small-output");
     click = new Audio();
 }
 function no1(){
@@ -190,10 +192,14 @@ function ac(){
     click.src = "assets/aud1.wav";
     click.play();
     if(clear.innerText == "AC"){
-        z = "0";
+        x = "";
+        y = "";
+        smalloutput.style.innerText = "";
     }
     clear.innerText = "AC";
     output.innerText = "0";
+    smalloutput.style.visibility = "hidden";
+    smalloutput.style.opacity = "0";
 }
 function abs(){
     click.src = "assets/aud1.wav";
@@ -225,14 +231,20 @@ function div(){
     click.play();
     pressed = true;
     x = output.innerText;
-    sign = "/";
+    sign = "÷";
+    smalloutput.style.visibility = "visible";
+    smalloutput.style.opacity = "1";
+    smalloutput.innerText = x + sign;
 }
 function mul(){
     click.src = "assets/aud1.wav";
     click.play();
     pressed = true;
     x = output.innerText;
-    sign = "*";
+    sign = "×";
+    smalloutput.style.visibility = "visible";
+    smalloutput.style.opacity = "1";
+    smalloutput.innerText = x + sign;
 }
 function add(){
     click.src = "assets/aud1.wav";
@@ -240,6 +252,9 @@ function add(){
     pressed = true;
     x = output.innerText;
     sign = "+";
+    smalloutput.style.visibility = "visible";
+    smalloutput.style.opacity = "1";
+    smalloutput.innerText = x + sign;
 }
 function min(){
     click.src = "assets/aud1.wav";
@@ -247,6 +262,9 @@ function min(){
     pressed = true;
     x = output.innerText;
     sign = "-";
+    smalloutput.style.visibility = "visible";
+    smalloutput.style.opacity = "1";
+    smalloutput.innerText = x + sign;
 }
 function equals(){
     click.src = "assets/aud1.wav";
@@ -258,11 +276,23 @@ function equals(){
     else if(sign == "-"){
         z =  parseFloat(x) - parseFloat(y);
     }
-    else if(sign == "*"){
+    else if(sign == "×"){
         z =  parseFloat(x)* parseFloat(y);
     }
-    else if(sign == "/"){
+    else if(sign == "÷"){
         z =  parseFloat(x)/ parseFloat(y);
     }
-    output.innerText = z;
+    else{
+        z = y;
+    }
+    smalloutput.style.visibility = "visible";
+    smalloutput.style.opacity = "1";
+    smalloutput.innerText += y;
+    if(z.toString().length > 10){
+        output.innerText = z.toFixed(10);
+    }
+    else{
+        output.innerText = z;
+    }
+    x = z;
 }

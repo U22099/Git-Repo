@@ -49,11 +49,15 @@ body{
     align-items: center;
     width: max-content;
     height: max-content;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .container > .content > .box-container > .box > .img img{
     width: 100px;
     border-radius: 10px;
     transition: 0.7s;
+    size: cover;
 }
 .container > .content > .box-container > .box > .img img:hover{
     transform: scale(1.08);
