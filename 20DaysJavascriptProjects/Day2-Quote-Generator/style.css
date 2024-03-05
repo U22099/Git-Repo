@@ -1,0 +1,68 @@
+body{
+    margin: 0px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+}
+.container > .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.container > .content img{
+    position: fixed;
+    size: cover;
+    width: 80%;
+    height: 100%;
+    animation: fadein 1s;
+    transition: 1s;
+}
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.container > .content > .div{
+    position: absolute;
+    left: auto;
+    right: auto;
+    width: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+.container > .content > .div > .copybtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.container > .content > .div > .copybtn button{
+    height: 40px;
+    width: 140px;
+    background-color: orangered;
+    color: #072af3;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(80% , 10%,10%, 70%);
+}
+.container > .content > .div > .copybtn button:hover{
+    cursor: pointer;
+}
+.container > .content > .div > .copybtn button:active{
+    box-shadow: none;
+}
