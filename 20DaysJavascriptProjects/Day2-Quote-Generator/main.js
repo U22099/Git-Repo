@@ -1,4 +1,7 @@
+import {quotes} from "quote.js";
 let img;
+let text;
+let author;
 let images = ["images/IMG1.JPG","images/IMG2.JPG","images/IMG3.JPG","images/IMG4.JPG",
             "images/IMG5.JPG","images/IMG6.JPG","images/IMG7.JPG","images/IMG8.JPG",
             "images/IMG9.JPG","images/IMG10.JPG","images/IMG11.JPG","images/IMG12.JPG",
@@ -9,9 +12,14 @@ let images = ["images/IMG1.JPG","images/IMG2.JPG","images/IMG3.JPG","images/IMG4
             "images/IMG29.JPG","images/IMG30.JPG"]
 window.onload = function(){
     img = document.querySelector(".img");
+    text = document.querySelector(".quote");
+    author = document.querySelector(".author");
 }
 function next(){
     //Change the background image Randomly
-    let x = Math.ceil(Math.random()*29);
+    let x = Math.ceil(Math.random()*(images.length-1));
     img.src = images[x];
+    let y = Math.ceil(Math.random()*(quotes.length-1));
+    text.innerText = quotes[y][text];
+    author.innerText = quotes[y][author];
 }
