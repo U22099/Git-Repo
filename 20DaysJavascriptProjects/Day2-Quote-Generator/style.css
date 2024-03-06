@@ -119,6 +119,9 @@ h2{
     }
 }
 @media (max-width: 615px){
+    .container {
+        height: 100%;
+    }
     .container > .content > .div{
         padding: 30px 10px;
     }
