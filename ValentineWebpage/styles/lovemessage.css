@@ -6,7 +6,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-color: #6a1978;
+    background-color: orangered;
     
 }
 .container > .content{
@@ -19,6 +19,7 @@ body{
     grid-gap: 10px;
     height: 100%;
     text-align: center;
+    padding-inline: 30px;
 }
 .container > .content > .bgcontent{
     display: flex;
@@ -35,7 +36,7 @@ body{
 .container > .content > .bgcontent > .btnplay button{
     color: white;
     font-size: 2em;
-    background-color: #731561;
+    background-color: red;
     height: 100px;
     width: 200px;
     border-radius: 10px;
@@ -51,13 +52,13 @@ body{
 .container > .content > .text h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 4em;
-    color: mediumpurple;
+    color: red;
     letter-spacing: 1px;
 }
 .container > .content > .text p{
     letter-spacing: 1px;
     font-size: 1.3em;
     font-family: 'Courier New', Courier, monospace;
-    color: #6b109c;
+    color: red;
     font-weight: 900;
 }

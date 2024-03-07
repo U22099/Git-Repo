@@ -1,8 +1,11 @@
+body{
+    margin: 0px;
+}
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #820d72;
+    background-color: orangered;
     height: 100vh;
 }
 .container > .content{
@@ -15,7 +18,7 @@
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 2px;
     font-weight: 700;
-    color: red;
+    color: white;
 }
 .container > .content > .btn{
     display: flex;
@@ -23,13 +26,13 @@
     align-items: center;
 }
 .container > .content > .btn a{
-    background-color: red;
+    background-color: white;
     border-radius: 15px;
     width: 150px;
     height: 60px;
     font-size: 2em;
     text-decoration: none;
-    color: white;
+    color: red;
     border: none;
     font-family: cursive;
 }

@@ -1,11 +1,15 @@
 @media (max-width: 615px) {
     .container > .content > .text {
-        width: 400px
+        width: 300px
     }
     .container > .content{
         grid-gap: 40px;
+        padding-inline: 10px;
     }
     .container > .content > .img{
         padding-top: 20px;
+    }
+    .container > .content > .img img{
+        width: 250px;
     }
 }

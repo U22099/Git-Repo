@@ -31,7 +31,7 @@ h2{
     position: absolute;
     left: auto;
     right: auto;
-    width: auto;
+    width: 400px;
     padding: 30px;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.3);
@@ -120,6 +120,10 @@ h2{
 }
 @media (max-width: 615px){
     .container > .content > .div{
+        width: 280px;
         padding: 30px 10px;
+    }
+    .container > .content > .div > .copybtn button{
+        width: 130px;
     }
 }

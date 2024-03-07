@@ -23,6 +23,7 @@ body{
     padding: 20px;
     border-radius: 20px;
     grid-gap: 20px;
+    transition: 1s;
 }
 .container > .content > .box-container{
     display: grid;
@@ -38,8 +39,6 @@ body{
     width: 100%;
     padding-bottom: 12px;
     transition: 0.7s;
-}
-.container > .content > .box-container > .box:hover{
     border-bottom: 2px solid white;
     border-radius: 10px;
 }
@@ -75,17 +74,18 @@ body{
     align-items: center;
     width: 100%;
     transition: 0.7s;
-}
-.container > .content > .box-container > .box > .txt > .header a{
-    text-decoration: none;
-    color: white;
-    width: 100%;
-}
-.container > .content > .box-container > .box > .txt > .header:hover , .container > .content > .box-container > .box > .txt > .header a:hover{
     background-color: white;
     color: black;
     border-radius: 10px;
     padding: 3px;
+}
+.container > .content > .box-container > .box > .txt > .header a{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 3px;
+    width: 100%;
 }
 .container > .content > .box-container > .box > .txt > .brief-description{
     display: flex;

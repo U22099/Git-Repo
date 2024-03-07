@@ -50,6 +50,7 @@ body{
 }
 
 .container > .content > .btn button:hover{
+    cursor: pointer;
     letter-spacing: 0.5px;
     box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.3);
 }
