@@ -5,7 +5,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(IMG_0113.JPG);
+    background-image: url("../images/IMG_0113.JPG");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,17 +120,19 @@ body{
 }
 .container > .content > .form-container > .form-content > .loginbtn{ 
     display: flex;
-    justify-content: center;
     align-items: center;
+    width: 100%;
+}
+.container > .content > .form-container > .form-content > .loginbtn button{ 
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
     background-color: black;
     width: 400px;
     margin: 0px 0px 0px 50px;
     border-radius: 20px;
-}
-.container > .content > .form-container > .form-content > .loginbtn a{ 
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
+    height: 50px;
 }
 .container > .content > .form-container > .form-content > .ps h2{ 
     font-size: 1.2em;

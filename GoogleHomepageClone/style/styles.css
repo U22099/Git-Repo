@@ -6,7 +6,7 @@ body{
      display: flex;
      justify-content: center;
      align-items: flex-start;
-     background-image: url("IMG_0117.JPG");
+     background-image: url("../images/IMG_0117.JPG");
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
