@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(bg2.jpg);
+    background-image: url("../images/bg2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 30px;
