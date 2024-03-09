@@ -155,6 +155,27 @@ body{
     box-shadow: -5px 5px 10px rgba(0,0,0,0.4);
     margin-bottom: 10px;
 }
+.container > .content > .form textarea::-webkit-scrollbar{
+    width: 5px;
+}
+.container > .content > .form textarea::-webkit-scrollbar-track{
+    background: black;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+.container > .content > .form textarea::-webkit-scrollbar-thumb{
+    background: grey;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+.container > .content > .form textarea::-webkit-scrollbar-thumb{
+    cursor: pointer;
+}
+.container > .content > .form textarea::-webkit-resizer{
+    visibility: none;
+}
 .container > .content > .form button{
     display: flex;
     justify-content: center;
@@ -168,7 +189,7 @@ body{
     margin-bottom: 10px;
     transition: 0.5s;
 }
-container > .content > .form button:hover{
+.container > .content > .form button:hover{
     box-shadow: -5px 5px 10px rgba(0,0,0,0.7);
     cursor: pointer;
 }
