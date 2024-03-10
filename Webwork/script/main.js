@@ -9,6 +9,7 @@ let author;
 let quotes;
 let toast;
 let prev;
+let y;
 let prevbtn;
 let called = 0;
 let images = [
@@ -6605,7 +6606,8 @@ window.onload = function(){
             1: "Tom Jackson",
         }
     ];
-    let y = Math.ceil(Math.random()*(quotes.length-1));
+    y = Math.ceil(Math.random()*(quotes.length-1));
+    prev = y;
     text.innerText = quotes[y][0];
     author.innerText = "- "+quotes[y][1];
     prevbtn.style.visibility = "hidden";
@@ -6616,15 +6618,14 @@ function next(){
     //Change the background image Randomly
     let x = Math.ceil(Math.random()*(images.length-1));
     img.src = images[x];
-    let y = Math.ceil(Math.random()*(quotes.length-1));
+    prev = y;
+    y = Math.ceil(Math.random()*(quotes.length-1));
     text.innerText = quotes[y][0];
     author.innerText = "- "+quotes[y][1];
-    prev = y;
 }
 function previous(){
     text.innerText = quotes[prev][0];
     author.innerText = "- "+quotes[prev][1];
-    called = 0;
     prevbtn.style.visibility = "hidden";
 }
 function copy(){
