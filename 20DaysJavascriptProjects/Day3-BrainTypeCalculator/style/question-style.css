@@ -49,12 +49,13 @@ body{
 }
 .container > .content > .question-body > .ans-body > .option{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    width: 100%;
 }
 .container > .content > .question-body > .ans-body > .option button{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     margin-right: 10px;
     color: black;
     background-color: white;
@@ -70,6 +71,12 @@ body{
 }
 .container > .content > .question-body > .ans-body > .option button:hover{
     cursor: pointer;
+}
+.container > .content > .question-body > .ans-body > .option h2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
 }
 @media (max-width: 615px){
     .container{

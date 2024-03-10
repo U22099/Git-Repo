@@ -10,8 +10,6 @@ let quotes;
 let toast;
 let prev;
 let y;
-let prevbtn;
-let called = 0;
 let images = [
             "images/IMG1.JPG","images/IMG2.JPG","images/IMG3.JPG","images/IMG4.JPG",
             "images/IMG5.JPG","images/IMG6.JPG","images/IMG7.JPG","images/IMG8.JPG",
@@ -6613,7 +6611,6 @@ window.onload = function(){
     prevbtn.style.visibility = "hidden";
 }
 function next(){
-    called += 1;
     prevbtn.style.visibility = "visible";
     //Change the background image Randomly
     let x = Math.ceil(Math.random()*(images.length-1));

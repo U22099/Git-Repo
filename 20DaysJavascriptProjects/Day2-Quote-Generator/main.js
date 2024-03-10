@@ -1,9 +1,17 @@
+let check = window.localStorage.getItem("check");
+if(check != "visited"){
+    window.location = "index.html";
+}
+localStorage.removeItem("check");
 let img;
 let text;
 let author;
 let quotes;
 let toast;
-let images = ["images/IMG1.JPG","images/IMG2.JPG","images/IMG3.JPG","images/IMG4.JPG",
+let prev;
+let y;
+let images = [
+            "images/IMG1.JPG","images/IMG2.JPG","images/IMG3.JPG","images/IMG4.JPG",
             "images/IMG5.JPG","images/IMG6.JPG","images/IMG7.JPG","images/IMG8.JPG",
             "images/IMG9.JPG","images/IMG10.JPG","images/IMG11.JPG","images/IMG12.JPG",
             "images/IMG13.JPG","images/IMG14.JPG","images/IMG15.JPG","images/IMG16.JPG",
@@ -13,12 +21,14 @@ let images = ["images/IMG1.JPG","images/IMG2.JPG","images/IMG3.JPG","images/IMG4
             "images/IMG29.JPG","images/IMG30.JPG","images/IMG31.JPG","images/IMG32.JPG",
             "images/IMG33.JPG","images/IMG34.JPG","images/IMG35.JPG","images/IMG36.JPG",
             "images/IMG37.JPG","images/IMG38.JPG","images/IMG39.JPG","images/IMG40.JPG",
-            "images/IMG41.JPG","images/IMG42.JPG","images/IMG43.JPG"]
+            "images/IMG41.JPG","images/IMG42.JPG","images/IMG43.JPG"
+            ]
 window.onload = function(){
     img = document.querySelector(".img");
     text = document.querySelector(".quote");
     author = document.querySelector(".author");
     toast = document.querySelector(".toast");
+    prevbtn = document.querySelector(".prevbtn");
     //Creating a constant variable for the quotes
     quotes = [
         {
@@ -6594,17 +6604,26 @@ window.onload = function(){
             1: "Tom Jackson",
         }
     ];
-    let y = Math.ceil(Math.random()*(quotes.length-1));
+    y = Math.ceil(Math.random()*(quotes.length-1));
+    prev = y;
     text.innerText = quotes[y][0];
     author.innerText = "- "+quotes[y][1];
+    prevbtn.style.visibility = "hidden";
 }
 function next(){
+    prevbtn.style.visibility = "visible";
     //Change the background image Randomly
     let x = Math.ceil(Math.random()*(images.length-1));
     img.src = images[x];
-    let y = Math.ceil(Math.random()*(quotes.length-1));
+    prev = y;
+    y = Math.ceil(Math.random()*(quotes.length-1));
     text.innerText = quotes[y][0];
     author.innerText = "- "+quotes[y][1];
+}
+function previous(){
+    text.innerText = quotes[prev][0];
+    author.innerText = "- "+quotes[prev][1];
+    prevbtn.style.visibility = "hidden";
 }
 function copy(){
     navigator.clipboard.writeText(text.innerText+"\nby:"+author.innerText);

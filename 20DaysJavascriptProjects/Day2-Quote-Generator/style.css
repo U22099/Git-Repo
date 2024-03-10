@@ -45,7 +45,8 @@ h2{
 }
 .container > .content > .div > .copybtn button{
     height: 40px;
-    width: 140px;
+    width: 100px;
+    font-weight: 800;
     background-color: orangered;
     color: #072af3;
     outline: none;
@@ -124,6 +125,7 @@ h2{
         padding: 30px 10px;
     }
     .container > .content > .div > .copybtn button{
-        width: 130px;
+        width: 100px;
+        margin-left: 5px;
     }
 }
