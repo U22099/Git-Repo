@@ -6619,18 +6619,13 @@ function next(){
     let y = Math.ceil(Math.random()*(quotes.length-1));
     text.innerText = quotes[y][0];
     author.innerText = "- "+quotes[y][1];
-    if(called > 2){
-        prev = y;
-    }
+    prev = y;
 }
 function previous(){
-    if(called > 2)
-    {
-        text.innerText = quotes[prev][0];
-        author.innerText = "- "+quotes[prev][1];
-        called = 0;
-        prevbtn.style.visibility = "hidden";
-    }
+    text.innerText = quotes[prev][0];
+    author.innerText = "- "+quotes[prev][1];
+    called = 0;
+    prevbtn.style.visibility = "hidden";
 }
 function copy(){
     navigator.clipboard.writeText(text.innerText+"\nby:"+author.innerText);
