@@ -8,7 +8,10 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: blue;
+    background-image: url("../images/IMG_0941.JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .container > .content{
     display: flex;
@@ -20,7 +23,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: blue;
     border-radius: 20px;
     padding: 10px 40px;
     box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.3);
@@ -29,7 +32,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: red;
+    background-color: blue;
     border-radius: 20px;
     padding: 20px;
     box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.3);
@@ -53,8 +56,8 @@ body{
     width: 40px;
     height: 40px;
     margin-right: 10px;
-    color: white;
-    background-color: blue;
+    color: black;
+    background-color: white;
     box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.5);
     outline: none;
     border: none;
