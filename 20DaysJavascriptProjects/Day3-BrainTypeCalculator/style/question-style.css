@@ -71,3 +71,16 @@ body{
 .container > .content > .question-body > .ans-body > .option button:hover{
     cursor: pointer;
 }
+@media (max-width: 615px){
+    .container{
+        padding: 20px 10px;
+        height: 100%;
+    }
+    .container > .content{
+        width: 100%;
+    }
+    .container > .content > .question-body > .ans-body > .option button:focus{
+        box-shadow: none;
+        cursor: pointer;
+    }
+}

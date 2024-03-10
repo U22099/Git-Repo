@@ -54,3 +54,18 @@ body{
 .container > .content a:active{
     box-shadow: none;
 }
+@media (max-width: 615px){
+    .container{
+        padding: 20px 10px;
+        height: 100%;
+    }
+    .container > .content{
+        width: 100%;
+    }
+    .container > .content p{
+        width: 90%;
+    }
+    .container > .content > .type{
+        flex-direction: column;
+    }
+}
