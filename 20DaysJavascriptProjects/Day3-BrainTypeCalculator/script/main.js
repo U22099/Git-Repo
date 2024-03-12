@@ -83,6 +83,18 @@ function showBrainType(x){
     a.style.visibility = "hidden";
     b.style.visibility = "hidden";
     c.style.visibility = "hidden";
+    a.style.width = "10px";
+    b.style.width = "10px";
+    c.style.width = "10px";
+    abtn.addEventListener("click", function(){
+        window.location = "tora.html";
+    });
+    bbtn.addEventListener("click", function(){
+        window.location = "kitsune.html";
+    });
+    cbtn.addEventListener("click", function(){
+        window.location = "kuma.html";
+    });
 }
 function apress(){
     aStore += 1;
