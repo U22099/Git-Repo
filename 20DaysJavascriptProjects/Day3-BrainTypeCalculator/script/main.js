@@ -116,7 +116,7 @@ function apress(){
     a.innerHTML = aArr[no];
     b.innerHTML = bArr[no];
     c.innerHTML = cArr[no];
-    if(no == 10){
+    if(no >= 10){
         if(aStore == bStore){
             win = Math.max(aStore, cStore);
             if(win == aStore){
