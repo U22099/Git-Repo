@@ -86,6 +86,9 @@ function showBrainType(x){
     a.style.width = "10px";
     b.style.width = "10px";
     c.style.width = "10px";
+    abtn.removeEventListener("click", apress());
+    bbtn.removeEventListener("click", bpress());
+    cbtn.removeEventListener("click", cpress());
     abtn.addEventListener("click", function(){
         window.location = "tora.html";
     });
