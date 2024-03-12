@@ -12,7 +12,8 @@ let bimg;
 let cimg;
 let typeArr = ["Learning","Decision Making","Daily Routine","Energy",
                 "Teamwork","Planning","Sleep","Appetite","Temperament",
-                "Stress"];
+                "Stress",
+                ""];
 let questArr = ["When playing a brand new game how do you learn the instructions?",
                 "When making important decisions, which type are you?",
                 "How do you prefer your daily routines to be?",
@@ -22,7 +23,8 @@ let questArr = ["When playing a brand new game how do you learn the instructions
                 "Describe your typical night of Sleep?",
                 "Describe your appetite on a typical day?",
                 "In general, which of the following best describes you?",
-                "You have an online assignment worth 50% of your grade. It is due in 15min. But the power and internet go out!"];
+                "You have an online assignment worth 50% of your grade. It is due in 15min. But the power and internet go out!",
+                ""];
 let aArr = ["Read the rules to determine the objectives.",
             "Thoroughly research all options before deciding.",
             "Goal-oriented for maximum productivity.",
@@ -42,7 +44,8 @@ let bArr = ["Hop in and start playing, and learn as I go",
             "Light sleeper, I wake up easily.",
             "It fluctuates. Sometimes I snack a lot, sometimes I forget to eat.",
             "Enthusiastic and enjoy trying new things.",
-            "Worry or anxiety"];
+            "Worry or anxiety",
+            ""];
 let cArr = ["Look for tutorials or guidance from someone else who has played",
             "Ask people I trust for recommendations.",
             "Predictable and steady for consistency.",
@@ -52,7 +55,8 @@ let cArr = ["Look for tutorials or guidance from someone else who has played",
             "Deep sleeper, waking up in the morning is hard.",
             "I tend to feel full for a while after a mean. I can comfortable dalay eating if needed.",
             "Easygoing and go with the flow.",
-            "Hopeless or loss of motivation."];
+            "Hopeless or loss of motivation.",
+            ""];
 let aStore = 0;
 let bStore = 0;
 let cStore = 0;
@@ -86,9 +90,6 @@ function showBrainType(x){
     a.style.width = "10px";
     b.style.width = "10px";
     c.style.width = "10px";
-    abtn.removeEventListener("click", apress());
-    bbtn.removeEventListener("click", bpress());
-    cbtn.removeEventListener("click", cpress());
     abtn.addEventListener("click", function(){
         window.location = "tora.html";
     });
