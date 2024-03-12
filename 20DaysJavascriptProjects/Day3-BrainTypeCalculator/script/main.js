@@ -96,9 +96,13 @@ function apress(){
             win = Math.max(aStore, cStore);
             if(win == aStore){
                 brainType = "Tora And Kitsune";
+                abtn.style.width = "150px";
+                abtn.style.height = "180px";
                 aimg.src = "images/IMG_0935.JPG";
                 abtn.style.width = "70%";
                 abtn.innerHTML = "Tora Group";
+                bbtn.style.width = "150px";
+                bbtn.style.height = "180px";
                 bimg.src = "images/IMG_0934.JPG";
                 bbtn.style.width = "70%";
                 bbtn.innerHTML = "Kitsune Group";
@@ -106,6 +110,8 @@ function apress(){
             }
             else if(win == cStore){
                 brainType = "Kuma";
+                cbtn.style.width = "150px";
+                cbtn.style.height = "180px";
                 cimg.src = "images/IMG_0936.JPG";
                 cbtn.style.width = "70%";
                 cbtn.innerHTML = "Kuma Group";
@@ -117,16 +123,22 @@ function apress(){
             win = Math.max(aStore, bStore);
             if(win == aStore){
                 brainType = "Tora And Kuma";
+                abtn.style.width = "150px";
+                abtn.style.height = "180px";
                 aimg.src = "images/IMG_0935.JPG";
                 abtn.style.width = "70%";
                 abtn.innerHTML = "Tora Group";
+                cbtn.style.width = "150px";
+                cbtn.style.height = "180px";
                 cimg.src = "images/IMG_0936.JPG";
                 cbtn.style.width = "70%";
                 cbtn.innerHTML = "Kuma Group";
                 bbtn.style.visibility = "hidden";
             }
-            else if(win == cStore){
+            else if(win == bStore){
                 brainType = "Kitsune";
+                bbtn.style.width = "150px";
+                bbtn.style.height = "180px";
                 bimg.src = "images/IMG_0934.JPG";
                 bbtn.style.width = "70%";
                 bbtn.innerHTML = "Kitsune Group";
@@ -136,18 +148,24 @@ function apress(){
         }
         else if(bStore == cStore){
             win = Math.max(bStore, cStore);
-            if(win == aStore){
+            if(win == bStore){
                 brainType = "Kitsune And Kuma";
+                bbtn.style.width = "150px";
+                bbtn.style.height = "180px";
                 bimg.src = "images/IMG_0934.JPG";
                 bbtn.style.width = "70%";
                 bbtn.innerHTML = "Kitsune Group";
+                cbtn.style.width = "150px";
+                cbtn.style.height = "180px";
                 cimg.src = "images/IMG_0936.JPG";
                 cbtn.style.width = "70%";
                 cbtn.innerHTML = "Kuma Group";
                 abtn.style.visibility = "hidden";
             }
-            else if(win == cStore){
+            else if(win == aStore){
                 brainType = "Tora";
+                abtn.style.width = "150px";
+                abtn.style.height = "180px";
                 aimg.src = "images/IMG_0935.JPG";
                 abtn.style.width = "70%";
                 abtn.innerHTML = "Tora Group";
@@ -157,12 +175,18 @@ function apress(){
         }
         else if(aStore == bStore && bStore == cStore){
             brainType = "Tora, Kitsuna And Kuma";
+            abtn.style.width = "150px";
+            abtn.style.height = "180px";
             aimg.src = "images/IMG_0935.JPG";
             abtn.style.width = "70%";
             abtn.innerHTML = "Tora Group";
+            bbtn.style.width = "150px";
+            bbtn.style.height = "180px";
             bimg.src = "images/IMG_0934.JPG";
             bbtn.style.width = "70%";
             bbtn.innerHTML = "Kitsune Group";
+            cbtn.style.width = "150px";
+            cbtn.style.height = "180px";
             cimg.src = "images/IMG_0936.JPG";
             cbtn.style.width = "70%";
             cbtn.innerHTML = "Kuma Group";
@@ -171,6 +195,8 @@ function apress(){
             win = Math.max(aStore, bStore, cStore);
             if(win == aStore){
                 brainType = "Tora";
+                abtn.style.width = "150px";
+                abtn.style.height = "180px";
                 aimg.src = "images/IMG_0935.JPG";
                 abtn.style.width = "70%";
                 abtn.innerHTML = "Tora Group";
@@ -179,6 +205,8 @@ function apress(){
             }
             else if(win == bStore){
                 brainType = "Kitsune";
+                bbtn.style.width = "150px";
+                bbtn.style.height = "180px";
                 bimg.src = "images/IMG_0934.JPG";
                 bbtn.style.width = "70%";
                 bbtn.innerHTML = "Kitsune Group";
@@ -187,6 +215,8 @@ function apress(){
             }
             else if(win == cStore){
                 brainType = "Kuma";
+                cbtn.style.width = "150px";
+                cbtn.style.height = "180px";
                 cimg.src = "images/IMG_0936.JPG";
                 cbtn.style.width = "70%";
                 cbtn.innerHTML = "Kuma Group";
@@ -213,9 +243,13 @@ function bpress(){
             win = Math.max(aStore, cStore);
             if(win == aStore){
                 brainType = "Tora And Kitsune";
+                abtn.style.width = "150px";
+                abtn.style.height = "180px";
                 aimg.src = "images/IMG_0935.JPG";
                 abtn.style.width = "70%";
                 abtn.innerHTML = "Tora Group";
+                bbtn.style.width = "150px";
+                bbtn.style.height = "180px";
                 bimg.src = "images/IMG_0934.JPG";
                 bbtn.style.width = "70%";
                 bbtn.innerHTML = "Kitsune Group";
@@ -223,6 +257,8 @@ function bpress(){
             }
             else if(win == cStore){
                 brainType = "Kuma";
+                cbtn.style.width = "150px";
+                cbtn.style.height = "180px";
                 cimg.src = "images/IMG_0936.JPG";
                 cbtn.style.width = "70%";
                 cbtn.innerHTML = "Kuma Group";
@@ -234,16 +270,22 @@ function bpress(){
             win = Math.max(aStore, bStore);
             if(win == aStore){
                 brainType = "Tora And Kuma";
+                abtn.style.width = "150px";
+                abtn.style.height = "180px";
                 aimg.src = "images/IMG_0935.JPG";
                 abtn.style.width = "70%";
                 abtn.innerHTML = "Tora Group";
+                cbtn.style.width = "150px";
+                cbtn.style.height = "180px";
                 cimg.src = "images/IMG_0936.JPG";
                 cbtn.style.width = "70%";
                 cbtn.innerHTML = "Kuma Group";
                 bbtn.style.visibility = "hidden";
             }
-            else if(win == cStore){
+            else if(win == bStore){
                 brainType = "Kitsune";
+                bbtn.style.width = "150px";
+                bbtn.style.height = "180px";
                 bimg.src = "images/IMG_0934.JPG";
                 bbtn.style.width = "70%";
                 bbtn.innerHTML = "Kitsune Group";
@@ -253,18 +295,24 @@ function bpress(){
         }
         else if(bStore == cStore){
             win = Math.max(bStore, cStore);
-            if(win == aStore){
+            if(win == bStore){
                 brainType = "Kitsune And Kuma";
+                bbtn.style.width = "150px";
+                bbtn.style.height = "180px";
                 bimg.src = "images/IMG_0934.JPG";
                 bbtn.style.width = "70%";
                 bbtn.innerHTML = "Kitsune Group";
+                cbtn.style.width = "150px";
+                cbtn.style.height = "180px";
                 cimg.src = "images/IMG_0936.JPG";
                 cbtn.style.width = "70%";
                 cbtn.innerHTML = "Kuma Group";
                 abtn.style.visibility = "hidden";
             }
-            else if(win == cStore){
+            else if(win == aStore){
                 brainType = "Tora";
+                abtn.style.width = "150px";
+                abtn.style.height = "180px";
                 aimg.src = "images/IMG_0935.JPG";
                 abtn.style.width = "70%";
                 abtn.innerHTML = "Tora Group";
@@ -274,12 +322,18 @@ function bpress(){
         }
         else if(aStore == bStore && bStore == cStore){
             brainType = "Tora, Kitsuna And Kuma";
+            abtn.style.width = "150px";
+            abtn.style.height = "180px";
             aimg.src = "images/IMG_0935.JPG";
             abtn.style.width = "70%";
             abtn.innerHTML = "Tora Group";
+            bbtn.style.width = "150px";
+            bbtn.style.height = "180px";
             bimg.src = "images/IMG_0934.JPG";
             bbtn.style.width = "70%";
             bbtn.innerHTML = "Kitsune Group";
+            cbtn.style.width = "150px";
+            cbtn.style.height = "180px";
             cimg.src = "images/IMG_0936.JPG";
             cbtn.style.width = "70%";
             cbtn.innerHTML = "Kuma Group";
@@ -288,6 +342,8 @@ function bpress(){
             win = Math.max(aStore, bStore, cStore);
             if(win == aStore){
                 brainType = "Tora";
+                abtn.style.width = "150px";
+                abtn.style.height = "180px";
                 aimg.src = "images/IMG_0935.JPG";
                 abtn.style.width = "70%";
                 abtn.innerHTML = "Tora Group";
@@ -296,6 +352,8 @@ function bpress(){
             }
             else if(win == bStore){
                 brainType = "Kitsune";
+                bbtn.style.width = "150px";
+                bbtn.style.height = "180px";
                 bimg.src = "images/IMG_0934.JPG";
                 bbtn.style.width = "70%";
                 bbtn.innerHTML = "Kitsune Group";
@@ -304,6 +362,8 @@ function bpress(){
             }
             else if(win == cStore){
                 brainType = "Kuma";
+                cbtn.style.width = "150px";
+                cbtn.style.height = "180px";
                 cimg.src = "images/IMG_0936.JPG";
                 cbtn.style.width = "70%";
                 cbtn.innerHTML = "Kuma Group";
@@ -330,9 +390,13 @@ function cpress(){
             win = Math.max(aStore, cStore);
             if(win == aStore){
                 brainType = "Tora And Kitsune";
+                abtn.style.width = "150px";
+                abtn.style.height = "180px";
                 aimg.src = "images/IMG_0935.JPG";
                 abtn.style.width = "70%";
                 abtn.innerHTML = "Tora Group";
+                bbtn.style.width = "150px";
+                bbtn.style.height = "180px";
                 bimg.src = "images/IMG_0934.JPG";
                 bbtn.style.width = "70%";
                 bbtn.innerHTML = "Kitsune Group";
@@ -340,6 +404,8 @@ function cpress(){
             }
             else if(win == cStore){
                 brainType = "Kuma";
+                cbtn.style.width = "150px";
+                cbtn.style.height = "180px";
                 cimg.src = "images/IMG_0936.JPG";
                 cbtn.style.width = "70%";
                 cbtn.innerHTML = "Kuma Group";
@@ -351,16 +417,22 @@ function cpress(){
             win = Math.max(aStore, bStore);
             if(win == aStore){
                 brainType = "Tora And Kuma";
+                abtn.style.width = "150px";
+                abtn.style.height = "180px";
                 aimg.src = "images/IMG_0935.JPG";
                 abtn.style.width = "70%";
                 abtn.innerHTML = "Tora Group";
+                cbtn.style.width = "150px";
+                cbtn.style.height = "180px";
                 cimg.src = "images/IMG_0936.JPG";
                 cbtn.style.width = "70%";
                 cbtn.innerHTML = "Kuma Group";
                 bbtn.style.visibility = "hidden";
             }
-            else if(win == cStore){
+            else if(win == bStore){
                 brainType = "Kitsune";
+                bbtn.style.width = "150px";
+                bbtn.style.height = "180px";
                 bimg.src = "images/IMG_0934.JPG";
                 bbtn.style.width = "70%";
                 bbtn.innerHTML = "Kitsune Group";
@@ -370,18 +442,24 @@ function cpress(){
         }
         else if(bStore == cStore){
             win = Math.max(bStore, cStore);
-            if(win == aStore){
+            if(win == bStore){
                 brainType = "Kitsune And Kuma";
+                bbtn.style.width = "150px";
+                bbtn.style.height = "180px";
                 bimg.src = "images/IMG_0934.JPG";
                 bbtn.style.width = "70%";
                 bbtn.innerHTML = "Kitsune Group";
+                cbtn.style.width = "150px";
+                cbtn.style.height = "180px";
                 cimg.src = "images/IMG_0936.JPG";
                 cbtn.style.width = "70%";
                 cbtn.innerHTML = "Kuma Group";
                 abtn.style.visibility = "hidden";
             }
-            else if(win == cStore){
+            else if(win == aStore){
                 brainType = "Tora";
+                abtn.style.width = "150px";
+                abtn.style.height = "180px";
                 aimg.src = "images/IMG_0935.JPG";
                 abtn.style.width = "70%";
                 abtn.innerHTML = "Tora Group";
@@ -391,12 +469,18 @@ function cpress(){
         }
         else if(aStore == bStore && bStore == cStore){
             brainType = "Tora, Kitsuna And Kuma";
+            abtn.style.width = "150px";
+            abtn.style.height = "180px";
             aimg.src = "images/IMG_0935.JPG";
             abtn.style.width = "70%";
             abtn.innerHTML = "Tora Group";
+            bbtn.style.width = "150px";
+            bbtn.style.height = "180px";
             bimg.src = "images/IMG_0934.JPG";
             bbtn.style.width = "70%";
             bbtn.innerHTML = "Kitsune Group";
+            cbtn.style.width = "150px";
+            cbtn.style.height = "180px";
             cimg.src = "images/IMG_0936.JPG";
             cbtn.style.width = "70%";
             cbtn.innerHTML = "Kuma Group";
@@ -405,6 +489,8 @@ function cpress(){
             win = Math.max(aStore, bStore, cStore);
             if(win == aStore){
                 brainType = "Tora";
+                abtn.style.width = "150px";
+                abtn.style.height = "180px";
                 aimg.src = "images/IMG_0935.JPG";
                 abtn.style.width = "70%";
                 abtn.innerHTML = "Tora Group";
@@ -413,6 +499,8 @@ function cpress(){
             }
             else if(win == bStore){
                 brainType = "Kitsune";
+                bbtn.style.width = "150px";
+                bbtn.style.height = "180px";
                 bimg.src = "images/IMG_0934.JPG";
                 bbtn.style.width = "70%";
                 bbtn.innerHTML = "Kitsune Group";
@@ -421,6 +509,8 @@ function cpress(){
             }
             else if(win == cStore){
                 brainType = "Kuma";
+                cbtn.style.width = "150px";
+                cbtn.style.height = "180px";
                 cimg.src = "images/IMG_0936.JPG";
                 cbtn.style.width = "70%";
                 cbtn.innerHTML = "Kuma Group";
