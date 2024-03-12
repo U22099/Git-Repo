@@ -95,6 +95,15 @@ function showBrainType(x){
     cbtn.addEventListener("click", function(){
         window.location = "kuma.html";
     });
+    aimg.addEventListener("click", function(){
+        window.location = "tora.html";
+    });
+    bimg.addEventListener("click", function(){
+        window.location = "kitsune.html";
+    });
+    cimg.addEventListener("click", function(){
+        window.location = "kuma.html";
+    });
 }
 function apress(){
     aStore += 1;
