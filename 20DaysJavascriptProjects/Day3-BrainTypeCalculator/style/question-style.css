@@ -3,6 +3,25 @@ body{
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+    border-radius: 20px;
+    padding: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #191970;
+    border-radius: 20px;
+    width: 8px;
+    opacity: 0.4;
+    transition: 0.5s;
+}
+::-webkit-scrollbar-thumb:hover{
+    cursor: pointer;
+    opacity: 1;
+}
 .container{
     display: flex;
     justify-content: center;
@@ -23,7 +42,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: #191970;
     border-radius: 20px;
     padding: 10px 40px;
     box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.3);
@@ -32,7 +51,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: blue;
+    background-color: #191970;
     border-radius: 20px;
     padding: 20px;
     box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.3);
@@ -78,6 +97,10 @@ body{
     align-items: center;
     width: 80%;
 }
+.container > .content > .question-body > .ans-body > .option img{
+    margin: 20px;
+    border-radius: 20px;
+}
 @media (max-width: 615px){
     .container{
         padding: 20px 10px;
@@ -85,6 +108,9 @@ body{
     }
     .container > .content{
         width: 100%;
+    }
+    .container > .content > .question-body{
+        padding: 10px;
     }
     .container > .content > .question-body > .ans-body > .option button:focus{
         box-shadow: none;
