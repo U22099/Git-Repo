@@ -42,7 +42,7 @@ body{
     padding: 40px 60px;
     width: 70%;
     box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.3);
-    margin-top: 30px;
+    margin: 40px 0px;
 }
 .container > .content > .header{
     display: flex;
@@ -66,9 +66,13 @@ body{
 .container > .content > .body {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     text-align: justify;
     width: 100%;
+}
+.container > .content > .body a{
+    color: black;
 }
 @media (max-width: 615px){
     .container > .content{
@@ -80,5 +84,18 @@ body{
     }
     .container > .content > .body {
         text-align: center;
+    }
+    .container > .content > .body h1{
+        font-size: 1.2em;
+    }
+    .container > .content > .body #psl{
+        font-size: 0.9em;
+    }
+    .container > .content > .body h2{
+        font-size: 0.8em;
+    }
+    .container > .content > .body ul{
+        font-size: 0.8em;
+        text-align: left;
     }
 }
