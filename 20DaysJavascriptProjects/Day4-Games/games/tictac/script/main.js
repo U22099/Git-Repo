@@ -9,7 +9,11 @@ let col8;
 let col9;
 let playerSign;
 let aiSign;
-let win;
+let win
+let lose;
+let won;
+let amt;
+let p,q,r = 0;
 window.onload = function(){
     col1 = document.querySelector("#col1");
     col2 = document.querySelector("#col2");
@@ -20,6 +24,9 @@ window.onload = function(){
     col7 = document.querySelector("#col7");
     col8 = document.querySelector("#col8");
     col9 = document.querySelector("#col9");
+    lose = document.querySelector("#lose");
+    won = document.querySelector("#won");
+    amt = document.querySelector("#amt");
     let x = Math.floor(Math.random()*2);
     if(x < 1){
         playerSign = "O";
@@ -108,50 +115,118 @@ function aiMove(){
     arr [6] = col7.innerHTML;
     arr [7] = col8.innerHTML;
     arr [8] = col9.innerHTML;
+    let bstpos = [4,0,2,6,8,1,3,5,7];
+    let randeff = Math.floor(Math.random()*4);
+    loop:
     while(!found){
-        for(var i = 0; i < arr.length; i++){
-            if(arr[i] == ""){
-                arr[i] = aiSign;
-                let x = checkArrWin(arr);
-                if(x == aiSign){
-                    updateBoard(arr);
-                    showWin(aiSign);
-                    found = true;
-                    break;
-                }
-                else{
-                    arr[i] = "";
-                }
-            }
-        }
-        for(var i = 0; i < arr.length; i++){
-            if(arr[i] == ""){
-                arr[i] = playerSign;
-                let x = checkArrWin(arr);
-                if(x == playerSign){
+        if (randeff > 0){
+            for(var i = 0; i < arr.length; i++){
+                if(arr[i] == ""){
                     arr[i] = aiSign;
-                    updateBoard(arr);
-                    found = true;
-                    break;
-                }
-                else{
-                    arr[i] = "";
+                    let x = checkArrWin(arr);
+                    if(x == aiSign){
+                        updateBoard(arr);
+                        showWin(aiSign);
+                        found = true;
+                        break loop;
+                    }
+                    else{
+                        arr[i] = "";
+                    }
                 }
             }
         }
-        for(var i = 0; i < arr.length; i++){
-            if(arr[i] == ""){
-                arr[i] = aiSign;
+        if(randeff > 0){
+            for(var i = 0; i < arr.length; i++){
+                if(arr[i] == ""){
+                    arr[i] = playerSign;
+                    let x = checkArrWin(arr);
+                    if(x == playerSign){
+                        arr[i] = aiSign;
+                        updateBoard(arr);
+                        checkDraw();
+                        found = true;
+                        break loop;
+                    }
+                    else{
+                        arr[i] = "";
+                    }
+                }
+            }
+        }
+        for(var i = 0; i < bstpos.length; i++){
+            if(arr[bstpos[i]] == ""){
+                arr[bstpos[i]] = aiSign;
                 updateBoard(arr);
+                checkDraw();
                 found = true;
-                break;
+                break loop;
             }
         }
+    checkDraw();
     found = true;
     }
 }
+function checkDraw(){
+//     let arrx = [];
+//     arrx [0] = col1.innerHTML;
+//     arrx [1] = col2.innerHTML;
+//     arrx [2] = col3.innerHTML;
+//     arrx [3] = col4.innerHTML;
+//     arrx [4] = col5.innerHTML;
+//     arrx [5] = col6.innerHTML;
+//     arrx [6] = col7.innerHTML;
+//     arrx [7] = col8.innerHTML;
+//     arrx [8] = col9.innerHTML;
+//     let draw = true;
+//     loopx:
+//     while(draw){
+//         for(var i = 0; i < arrx.lenght; i++){
+//             if(arrx[i] = ""){
+//                 draw = false;
+//                 break loopx;
+//             }
+//         }
+//         alert("The Game is a Draw!");
+//         arrx [0] = "";
+//         arrx [1] = "";
+//         arrx [2] = "";
+//         arrx [3] = "";
+//         arrx [4] = "";
+//         arrx [5] = "";
+//         arrx [6] = "";
+//         arrx [7] = "";
+//         arrx [8] = "";
+//         updateBoard(arrx);
+//         amt += 1;
+//         draw = false;
+//         break loopx;
+//     }
+}
 function showWin(x){
-    alert(x);
+    if(x == playerSign){
+        alert("You Win!!");
+        p += 1;
+        won = p;
+    }
+    else{
+        alert("You Lose!!");
+        q += 1;
+        lose = q;
+    }
+    let arr = [];
+    arr [0] = "";
+    arr [1] = "";
+    arr [2] = "";
+    arr [3] = "";
+    arr [4] = "";
+    arr [5] = "";
+    arr [6] = "";
+    arr [7] = "";
+    arr [8] = "";
+    updateBoard(arr);
+    r += 1;
+    amt = r;
 }
 function run1(){
     col1.innerHTML = playerSign;

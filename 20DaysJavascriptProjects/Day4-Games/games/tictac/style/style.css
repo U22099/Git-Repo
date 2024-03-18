@@ -101,5 +101,6 @@ body{
     }
     .container > .content > .gameboard > .game-container > .row{
         height: 100px;
+        width: 240px;
     }
 }
