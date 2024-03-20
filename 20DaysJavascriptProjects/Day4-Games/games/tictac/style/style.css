@@ -68,7 +68,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;  
     width: 100%;
-    height: 120px;
+    height: 100%;
 }
 .container > .content > .gameboard > .game-container > .row button{
     display: flex;
@@ -88,6 +88,20 @@ body{
 .container > .content > .gameboard > .game-container > .row button:active{
     border-bottom: 2px solid purple;
 }
+.container > .content > .toastdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8f00ff;
+    color: black;
+    visibility: hidden;
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
+}
+.container > .content > .toastdiv h1{
+    visibility: hidden;
+}
 @media (max-width: 615px){
     .container{
         height: 100%;
@@ -100,7 +114,7 @@ body{
         height: 300px;
     }
     .container > .content > .gameboard > .game-container > .row{
-        height: 100px;
-        width: 240px;
+        height: 100%;
+        width: 100px;
     }
 }

@@ -9,11 +9,12 @@ let col8;
 let col9;
 let playerSign;
 let aiSign;
-let win
 let lose;
 let won;
 let amt;
-let p,q,r = 0;
+let p = 0,q = 0,r = 0;
+let toastdiv;
+let toast;
 window.onload = function(){
     col1 = document.querySelector("#col1");
     col2 = document.querySelector("#col2");
@@ -27,6 +28,8 @@ window.onload = function(){
     lose = document.querySelector("#lose");
     won = document.querySelector("#won");
     amt = document.querySelector("#amt");
+    toastdiv = document.querySelector(".toastdiv");
+    toast = document.querySelector("#toast");
     let x = Math.floor(Math.random()*2);
     if(x < 1){
         playerSign = "O";
@@ -119,38 +122,34 @@ function aiMove(){
     let randeff = Math.floor(Math.random()*4);
     loop:
     while(!found){
-        if (randeff > 0){
-            for(var i = 0; i < arr.length; i++){
-                if(arr[i] == ""){
-                    arr[i] = aiSign;
-                    let x = checkArrWin(arr);
-                    if(x == aiSign){
-                        updateBoard(arr);
-                        showWin(aiSign);
-                        found = true;
-                        break loop;
-                    }
-                    else{
-                        arr[i] = "";
-                    }
+        for(var i = 0; i < arr.length; i++){
+            if(arr[i] == ""){
+                arr[i] = aiSign;
+                let x = checkArrWin(arr);
+                if(x == aiSign){
+                    updateBoard(arr);
+                    setTimeout(8000,showWin(aiSign));
+                    found = true;
+                    break loop;
+                }
+                else{
+                    arr[i] = "";
                 }
             }
         }
-        if(randeff > 0){
-            for(var i = 0; i < arr.length; i++){
-                if(arr[i] == ""){
-                    arr[i] = playerSign;
-                    let x = checkArrWin(arr);
-                    if(x == playerSign){
-                        arr[i] = aiSign;
-                        updateBoard(arr);
-                        checkDraw();
-                        found = true;
-                        break loop;
-                    }
-                    else{
-                        arr[i] = "";
-                    }
+        for(var i = 0; i < arr.length; i++){
+            if(arr[i] == ""){
+                arr[i] = playerSign;
+                let x = checkArrWin(arr);
+                if(x == playerSign){
+                    arr[i] = aiSign;
+                    updateBoard(arr);
+                    checkDraw();
+                    found = true;
+                    break loop;
+                }
+                else{
+                    arr[i] = "";
                 }
             }
         }
@@ -203,16 +202,25 @@ function checkDraw(){
 //         break loopx;
 //     }
 }
+function showToast(x){
+    toastdiv.style.visibility = "visible";
+    toast.style.visibility = "visible";
+    toast.innerHTML = x;
+    setTimeout(2000, function(){
+        toastdiv.style.visibility = "hidden";
+        toast.style.visibility = "hidden";
+    });
+}
 function showWin(x){
     if(x == playerSign){
-        alert("You Win!!");
+        showToast("YOU WIN!!");
         p += 1;
-        won = p;
+        won.innerHTML = p;
     }
     else{
-        alert("You Lose!!");
-        q += 1;
-        lose = q;
+        showToast("YOU LOSE!!");
+        q += 1
+        lose.innerHTML = q;
     }
     let arr = [];
     arr [0] = "";
@@ -226,13 +234,13 @@ function showWin(x){
     arr [8] = "";
     updateBoard(arr);
     r += 1;
-    amt = r;
+    amt.innerHTML = r;
 }
 function run1(){
     col1.innerHTML = playerSign;
-    win = checkWin();
+    let win = checkWin();
     if(win == playerSign){
-        showWin(playerSign);
+        setTimeout(2000,showWin(playerSign));
         win = "";
     }
     else{
@@ -241,9 +249,9 @@ function run1(){
 }
 function run2(){
     col2.innerHTML = playerSign;
-    win = checkWin();
+    let win = checkWin();
     if(win){
-        showWin(playerSign);
+        setTimeout(2000,showWin(playerSign));
         win = "";
     }
     else{
@@ -252,9 +260,9 @@ function run2(){
 }
 function run3(){
     col3.innerHTML = playerSign;
-    win = checkWin();
+    let win = checkWin();
     if(win){
-        showWin(playerSign);
+        setTimeout(2000,showWin(playerSign));
         win = "";
     }
     else{
@@ -263,9 +271,9 @@ function run3(){
 }
 function run4(){
     col4.innerHTML = playerSign;
-    win = checkWin();
+    let win = checkWin();
     if(win){
-        showWin(playerSign);
+        setTimeout(2000,showWin(playerSign));
         win = "";
     }
     else{
@@ -274,9 +282,9 @@ function run4(){
 }
 function run5(){
     col5.innerHTML = playerSign;
-    win = checkWin();
+    let win = checkWin();
     if(win){
-        showWin(playerSign);
+        setTimeout(2000,showWin(playerSign));
         win = "";
     }
     else{
@@ -285,9 +293,9 @@ function run5(){
 }
 function run6(){
     col6.innerHTML = playerSign;
-    win = checkWin();
+    let win = checkWin();
     if(win){
-        showWin(playerSign);
+        setTimeout(2000,showWin(playerSign));
         win = "";
     }
     else{
@@ -296,9 +304,9 @@ function run6(){
 }
 function run7(){
     col7.innerHTML = playerSign;
-    win = checkWin();
+    let win = checkWin();
     if(win){
-        showWin(playerSign);
+        setTimeout(2000,showWin(playerSign));
         win = "";
     }
     else{
@@ -307,9 +315,9 @@ function run7(){
 }
 function run8(){
     col8.innerHTML = playerSign;
-    win = checkWin();
+    let win = checkWin();
     if(win){
-        showWin(playerSign);
+        setTimeout(2000,showWin(playerSign));
         win = "";
     }
     else{
@@ -318,9 +326,9 @@ function run8(){
 }
 function run9(){
     col9.innerHTML = playerSign;
-    win = checkWin();
+    let win = checkWin();
     if(win){
-        showWin(playerSign);
+        setTimeout(2000,showWin(playerSign));
         win = "";
     }
     else{
