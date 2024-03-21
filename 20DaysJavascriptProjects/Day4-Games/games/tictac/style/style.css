@@ -95,9 +95,7 @@ body{
     background-color: #8f00ff;
     color: black;
     visibility: hidden;
-    padding: 20px;
     border-radius: 20px;
-    width: 80%;
 }
 .container > .content > .toastdiv h1{
     visibility: hidden;
@@ -109,12 +107,23 @@ body{
     .container > .content{
         grid-template-columns: 1fr;
         margin: 40px 0px;
+        grid-gap: 20px;
+    }
+    .container > .content > .scoreboard h1{
+        margin: 5px;
+    }
+    .container > .content > .scoreboard > .count h1{
+        margin: 5px;
     }
     .container > .content > .gameboard{
-        height: 300px;
+        height: 310px;
     }
     .container > .content > .gameboard > .game-container > .row{
         height: 100%;
-        width: 100px;
+        width: 100%;
+    }
+    .container > .content > .gameboard > .game-container > .row button{
+        height: 100px;
+        width: 90px;
     }
 }
