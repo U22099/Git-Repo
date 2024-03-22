@@ -13,7 +13,7 @@ let lose;
 let draw;
 let won;
 let amt;
-let p = 0,q = 0,r = 0,s = 0;
+let p = 0,q = 0,r = 0,z = 0;
 let toastdiv;
 let toast;
 window.onload = function(){
@@ -190,8 +190,8 @@ function checkDraw(){
     }
     if(draw){
         showWin("Draw");
-        s += 1;
-        draw.innerHTML = s;
+        z += 1;
+        draw.innerHTML = z;
     }
 }
 function showToast(x){
