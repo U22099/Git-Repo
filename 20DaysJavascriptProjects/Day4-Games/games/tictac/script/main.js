@@ -212,9 +212,24 @@ function showToast(x){
     toast.style.visibility = "visible";
     toast.innerHTML = x;
     setTimeout(function(){
-        toastdiv.style.visibility = "hidden";
-        toast.style.visibility = "hidden";
-    }, 2000);
+        toast.innerHTML = "Click to reset";
+        toast.style.cursor = "pointer";
+        toast.addEventListener("click", function(){
+            toastdiv.style.visibility = "hidden";
+            toast.style.visibility = "hidden"; 
+            let arr = [];
+            arr [0] = "";
+            arr [1] = "";
+            arr [2] = "";
+            arr [3] = "";
+            arr [4] = "";
+            arr [5] = "";
+            arr [6] = "";
+            arr [7] = "";
+            arr [8] = "";
+            updateBoard(arr);    
+            randassign();
+    })}, 2000);
 }
 function showWin(x){
     if(x == playerSign){
@@ -227,26 +242,13 @@ function showWin(x){
         q += 1
         lose.innerHTML = q;
     }
-    let arr = [];
-    arr [0] = "";
-    arr [1] = "";
-    arr [2] = "";
-    arr [3] = "";
-    arr [4] = "";
-    arr [5] = "";
-    arr [6] = "";
-    arr [7] = "";
-    arr [8] = "";
-    updateBoard(arr);
-    randassign();
     r += 1;
     amt.innerHTML = r;
 }
 function run1(){
     if(col1.innerHTML == ""){
         col1.innerHTML = playerSign;
-        let win = checkWin();
-        
+        let win = checkWin();        
         if(win == playerSign){
             setTimeout(showWin(playerSign), 3000);
             win = "";
