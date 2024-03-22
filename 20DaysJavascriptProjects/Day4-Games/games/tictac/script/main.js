@@ -169,21 +169,21 @@ function aiMove(){
     found = true;
     }
 }
-function checkDraw(){
-    let arrx = [];
-    arrx [0] = col1.innerHTML;
-    arrx [1] = col2.innerHTML;
-    arrx [2] = col3.innerHTML;
-    arrx [3] = col4.innerHTML;
-    arrx [4] = col5.innerHTML;
-    arrx [5] = col6.innerHTML;
-    arrx [6] = col7.innerHTML;
-    arrx [7] = col8.innerHTML;
-    arrx [8] = col9.innerHTML;
-    let draw = false;
-    for(var i; i<arrx.lenght; i++){
-        if(arrx[i] == ""){
-            draw = true;
+function checkDraw(){  
+    let draw = true;
+    let arr = [];
+    arr [0] = col1.innerHTML;
+    arr [1] = col2.innerHTML;
+    arr [2] = col3.innerHTML;
+    arr [3] = col4.innerHTML;
+    arr [4] = col5.innerHTML;
+    arr [5] = col6.innerHTML;
+    arr [6] = col7.innerHTML;
+    arr [7] = col8.innerHTML;
+    arr [8] = col9.innerHTML;
+    for(var i=0; i<arr.length; i++){
+        if(arr[i] == ""){
+            draw = false;
         }
     }
     if(draw){
