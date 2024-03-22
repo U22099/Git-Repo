@@ -13,7 +13,10 @@ let lose;
 let draw;
 let won;
 let amt;
-let p = 0,q = 0,r = 0,z = 0;
+let p = 0;
+let q = 0;
+let r = 0;
+let z = 0;
 let toastdiv;
 let toast;
 window.onload = function(){
