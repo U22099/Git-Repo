@@ -193,8 +193,6 @@ function checkDraw(){
     }
     if(draw){
         showWin("Draw");
-        z += 1;
-        draw.innerHTML = z;
     }
 }
 function showToast(x){
@@ -229,11 +227,13 @@ function showWin(x){
     }
     else if(x == aiSign){
         showToast("YOU LOSE!!");
-        q += 1
+        q += 1;
         lose.innerHTML = q;
     }
     else{
         showToast("DRAW!!");
+        z += 1;
+        draw.innerHTML = z;
     }
     r += 1;
     amt.innerHTML = r;
