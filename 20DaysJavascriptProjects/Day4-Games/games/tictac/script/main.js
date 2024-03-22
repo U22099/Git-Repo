@@ -170,42 +170,25 @@ function aiMove(){
     }
 }
 function checkDraw(){
-//     let arrx = [];
-//     arrx [0] = col1.innerHTML;
-//     arrx [1] = col2.innerHTML;
-//     arrx [2] = col3.innerHTML;
-//     arrx [3] = col4.innerHTML;
-//     arrx [4] = col5.innerHTML;
-//     arrx [5] = col6.innerHTML;
-//     arrx [6] = col7.innerHTML;
-//     arrx [7] = col8.innerHTML;
-//     arrx [8] = col9.innerHTML;
-//     let draw = true;
-//     loopx:
-//     while(draw){
-//         for(var i = 0; i < arrx.lenght; i++){
-//             if(arrx[i] == ""){
-//                 draw = false;
-//                 alert("checked"+arrx[i]);
-//                 break loopx;
-//             }
-//         }
-//         showToast("DRAW");
-//         arrx [0] = "";
-//         arrx [1] = "";
-//         arrx [2] = "";
-//         arrx [3] = "";
-//         arrx [4] = "";
-//         arrx [5] = "";
-//         arrx [6] = "";
-//         arrx [7] = "";
-//         arrx [8] = "";
-//         updateBoard(arrx);
-//         randassign();
-//         amt += 1;
-//         draw = false;
-//         break loopx;
-//     }
+    let arrx = [];
+    arrx [0] = col1.innerHTML;
+    arrx [1] = col2.innerHTML;
+    arrx [2] = col3.innerHTML;
+    arrx [3] = col4.innerHTML;
+    arrx [4] = col5.innerHTML;
+    arrx [5] = col6.innerHTML;
+    arrx [6] = col7.innerHTML;
+    arrx [7] = col8.innerHTML;
+    arrx [8] = col9.innerHTML;
+    let draw = false;
+    for(var i; i<arrx.lenght; i++){
+        if(arrx[i] == ""){
+            draw = true;
+        }
+    }
+    if(draw){
+        showWin("Draw");
+    }
 }
 function showToast(x){
     toastdiv.style.visibility = "visible";
@@ -237,10 +220,13 @@ function showWin(x){
         p += 1;
         won.innerHTML = p;
     }
-    else{
+    else if(x == aiSign){
         showToast("YOU LOSE!!");
         q += 1
         lose.innerHTML = q;
+    }
+    else{
+        showToast("DRAW!!");
     }
     r += 1;
     amt.innerHTML = r;
@@ -250,7 +236,7 @@ function run1(){
         col1.innerHTML = playerSign;
         let win = checkWin();        
         if(win == playerSign){
-            setTimeout(showWin(playerSign), 3000);
+            showWin(playerSign);
             win = "";
         }
         else{
@@ -263,7 +249,7 @@ function run2(){
         col2.innerHTML = playerSign;
         let win = checkWin();       
         if(win == playerSign){
-            setTimeout(showWin(playerSign), 3000);
+            showWin(playerSign);
             win = "";
         }
         else{
@@ -276,7 +262,7 @@ function run3(){
         col3.innerHTML = playerSign;
         let win = checkWin();        
         if(win == playerSign){
-            setTimeout(showWin(playerSign), 3000);
+            showWin(playerSign);
             win = "";
         }
         else{
@@ -289,7 +275,7 @@ function run4(){
         col4.innerHTML = playerSign;
         let win = checkWin();        
         if(win == playerSign){
-            setTimeout(showWin(playerSign), 3000);
+            showWin(playerSign);
             win = "";
         }
         else{
@@ -302,7 +288,7 @@ function run5(){
         col5.innerHTML = playerSign;
         let win = checkWin();        
         if(win == playerSign){
-            setTimeout(showWin(playerSign), 3000);
+            showWin(playerSign);
             win = "";
         }
         else{
@@ -315,7 +301,7 @@ function run6(){
         col6.innerHTML = playerSign;
         let win = checkWin();        
         if(win == playerSign){
-            setTimeout(showWin(playerSign), 3000);
+            showWin(playerSign);
             win = "";
         }
         else{
@@ -328,7 +314,7 @@ function run7(){
         col7.innerHTML = playerSign;
         let win = checkWin();        
         if(win == playerSign){
-            setTimeout(showWin(playerSign), 3000);
+            showWin(playerSign);
             win = "";
         }
         else{
@@ -341,7 +327,7 @@ function run8(){
         col8.innerHTML = playerSign;
         let win = checkWin();        
         if(win == playerSign){
-            setTimeout(showWin(playerSign), 3000);
+            showWin(playerSign);
             win = "";
         }
         else{
@@ -354,7 +340,7 @@ function run9(){
         col9.innerHTML = playerSign;
         let win = checkWin();        
         if(win == playerSign){
-            setTimeout(showWin(playerSign), 3000);
+            showWin(playerSign);
             win = "";
         }
         else{
