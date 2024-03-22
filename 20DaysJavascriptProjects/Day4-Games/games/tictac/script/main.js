@@ -10,9 +10,10 @@ let col9;
 let playerSign;
 let aiSign;
 let lose;
+let draw;
 let won;
 let amt;
-let p = 0,q = 0,r = 0;
+let p = 0,q = 0,r = 0,s = 0;
 let toastdiv;
 let toast;
 window.onload = function(){
@@ -26,6 +27,7 @@ window.onload = function(){
     col8 = document.querySelector("#col8");
     col9 = document.querySelector("#col9");
     lose = document.querySelector("#lose");
+    draw = document.querySelector("#draw");
     won = document.querySelector("#won");
     amt = document.querySelector("#amt");
     toastdiv = document.querySelector(".toastdiv");
@@ -188,6 +190,8 @@ function checkDraw(){
     }
     if(draw){
         showWin("Draw");
+        s += 1;
+        draw.innerHTML = s;
     }
 }
 function showToast(x){
