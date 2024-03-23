@@ -174,12 +174,13 @@ body{
     }
     .container > .content > .section textarea{
         width: 280px;
+        height: 300px;
     }
     .container > .content > .section > .voice{
         flex-direction: column;
     }
     .container > .content > .section > .voice #voice{
-        margin: 0px;
+        margin: 0px 0px 30px 0px;
         font-size: 1em;
         width: 260px;
     }

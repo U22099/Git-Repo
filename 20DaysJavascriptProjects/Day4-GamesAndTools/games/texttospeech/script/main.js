@@ -41,7 +41,7 @@ function play(){
         txt.setAttribute("placeholder", x);
     }
     else if(txt.value == "$glory"){
-        x = "Glory I love you!!";
+        x = "Glory, I love you!!";
         console.log("As a friend");
         txt.value = "";
         txt.setAttribute("placeholder", x);
