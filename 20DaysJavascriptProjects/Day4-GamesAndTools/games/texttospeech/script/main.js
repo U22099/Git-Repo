@@ -14,7 +14,7 @@ window.onload = function(){
     voiceSelect = document.querySelector("#voice");
     window.speechSynthesis.onvoiceschanged = ()=>{
         voices = window.speechSynthesis.getVoices();
-        speech.voice = voices[0];
+        speech.voice = voices[3];
         voices.forEach((voice,i) => (voiceSelect.options[i] = new Option(voice.name,
             i)));
     }
