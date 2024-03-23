@@ -126,8 +126,17 @@ function aiMove(){
     arr [6] = col7.innerHTML;
     arr [7] = col8.innerHTML;
     arr [8] = col9.innerHTML;
+    let randeff = Math.floor(Math.random()*7);
     let bstpos = [4,0,2,6,8,1,3,5,7];
-    let randeff = Math.floor(Math.random()*4);
+    if(randeff > 4){
+        bstpos = [4,0,2,6,8,1,3,5,7];
+    }
+    else if(3 <= randeff <= 4){
+        bstpos = [4,6,8,0,2,1,3,5,7];
+    }
+    else{
+        bstpos = [4,3,7,6,8,0,2,1,5];
+    }
     loop:
     while(!found){
         for(var i = 0; i < arr.length; i++){
