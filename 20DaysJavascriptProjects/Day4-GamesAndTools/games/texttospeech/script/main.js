@@ -24,14 +24,32 @@ window.onload = function(){
 }
 function play(){
     let x;
+    let plcholder;
     if(txt.value == "$f"){
         x = "Hello Dear Friend, Type in anything and i will say it aloud";
+        txt.value = "";
+        txt.setAttribute("placeholder", x);
     }
     else if(txt.value == "$l"){
         x = "Hello darling, how are you today? Type in anything and i will say it aloud";
+        txt.value = "";
+        txt.setAttribute("placeholder", x);
     }
     else if(txt.value == "$lm"){
-        x = "Darling sweetheart, I have three words to say to you, there are... I LOVE YOU!";
+        x = "Darling sweetheart, I have three words to say to you, there are... I.. LOVE.. YOU!";
+        txt.value = "";
+        txt.setAttribute("placeholder", x);
+    }
+    else if(txt.value == "$glory"){
+        x = "Glory I love you!!";
+        console.log("As a friend");
+        txt.value = "";
+        txt.setAttribute("placeholder", x);
+    }
+    else if(txt.value == "$layemi"){
+        x = "You are one of a kind dear, special and loving, I'm so lucky to have you";
+        txt.value = "";
+        txt.setAttribute("placeholder", x);
     }
     else{
         x = txt.value;
