@@ -154,3 +154,36 @@ body{
 .container > .content > .section > .voice #voice:hover, .container > .content > .section > .voice button:hover{
     cursor: pointer;
 }
+@media (max-width: 615px){
+    .container > .content{
+        margin: 0px;
+        width: 100%;
+    }
+    .container > .content header{
+        margin: 10px 0px 0px 0px;
+        justify-content: center;
+        padding: 0px;
+    }
+    .container > .content > .header > .time > .sepa{
+        margin: 0px;
+        justify-content: center;
+    }
+    .container > .content > .section > .head{
+        font-size: 1.5em;
+        flex-direction: column;
+    }
+    .container > .content > .section textarea{
+        width: 280px;
+    }
+    .container > .content > .section > .voice{
+        flex-direction: column;
+    }
+    .container > .content > .section > .voice #voice{
+        margin: 0px;
+        font-size: 1em;
+        width: 260px;
+    }
+    container > .content > .section > .voice button{
+        margin: 20px 0px 60px 0px;
+    }
+}
