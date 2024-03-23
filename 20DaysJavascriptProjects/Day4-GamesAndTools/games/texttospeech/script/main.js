@@ -1,4 +1,4 @@
-let hr;
+let hrs;
 let min;
 let sec;
 let txt;
@@ -7,7 +7,7 @@ let speech = new SpeechSynthesisUtterance();
 let voices = [];
 
 window.onload = function(){
-    hr = document.querySelector(".hr");
+    hrs = document.querySelector(".hrs");
     min = document.querySelector(".min");
     sec = document.querySelector(".sec");
     txt = document.querySelector("#txt");
@@ -22,12 +22,6 @@ window.onload = function(){
         speech.voice = voices[voiceSelect.value];
     });
 }
-setInterval(()=>{
-        let timeobject = new Date();
-        hr.innerHTML = (timeobject.getHours()<10?"0":"")+timeobject.getHours();
-        min.innerHTML = (timeobject.getMinutes()<10?"0":"")+timeobject.getMinutes();
-        sec.innerHTML = (timeobject.getSeconds()<10?"0":"")+timeobject.getSeconds();
-}, 1000);
 function play(){
     let x;
     if(txt.value == "$f"){
@@ -45,3 +39,9 @@ function play(){
     speech.text = x;
     window.speechSynthesis.speak(speech);
 }
+setInterval(()=>{
+    let timeobject = new Date();
+    hrs.innerHTML = (timeobject.getHours()<10?"0":"")+timeobject.getHours();
+    min.innerHTML = (timeobject.getMinutes()<10?"0":"")+timeobject.getMinutes();
+    sec.innerHTML = (timeobject.getSeconds()<10?"0":"")+timeobject.getSeconds();
+}, 1000);

@@ -60,7 +60,7 @@ body{
 .container > .content > .header > .time > .sepa{
     margin: 0px 30px 0px 0px;
 }
-.container > .content > .header > .time > .hr:after{
+.container > .content > .header > .time > .hrs:after{
     content: "HOUR";
     font-size: 16px;
     position: relative;
