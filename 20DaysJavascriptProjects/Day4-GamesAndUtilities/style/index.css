@@ -39,6 +39,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: none;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
