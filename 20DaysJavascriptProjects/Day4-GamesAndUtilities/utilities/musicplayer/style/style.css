@@ -3,6 +3,25 @@ body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 }
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+    border-radius: 20px;
+    padding: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: purple;
+    border-radius: 20px;
+    width: 8px;
+    opacity: 0.4;
+    transition: 0.5s;
+}
+::-webkit-scrollbar-thumb:hover{
+    cursor: pointer;
+    opacity: 1;
+}
 .container{
     display: flex;
     justify-content: center;
@@ -81,6 +100,7 @@ i:hover{
     height: 25px;
     cursor: pointer;
     background: purple;
+    border: 8px solid black;
 }
 .container > .content > .controls{
     display: flex;
@@ -92,10 +112,16 @@ i:hover{
 .container > .content > .controls i{
     background: none;
     backdrop-filter: blur(10px);
-    border: 2px solid purple;
+    border: 8px solid purple;
+    color: black;
+    text-align: center;
     border-radius: 50%;
     padding: 30px;
     font-size: 2em;
+    transition: 0.5s;
+}
+.container > .content > .controls i:active,.container > .content > .controls i:hover{
+    background: purple;
 }
 .container > .content > .controls i:nth-child(2){
     font-size: 3em;
@@ -103,5 +129,8 @@ i:hover{
 @media (max-width: 615px){
     .container > .content{
         width: 95%;
+    }
+    .container > .content > .controls i{
+        padding: 18px;
     }
 }
