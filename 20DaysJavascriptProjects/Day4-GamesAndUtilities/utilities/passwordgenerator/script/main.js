@@ -32,5 +32,6 @@ function generateRandomPassword(){
     //         helper2 += string2.charAt(randint);
     //     }
     // }
-    console.log(string1+string2);
+    output.value = string1+string2;
+    output.innerHTML = string1+string2;
 }
