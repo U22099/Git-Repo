@@ -66,3 +66,8 @@ body{
     font-size: 1.3em;
     margin: 10px 0px;
 }
+@media (max-width:615px){
+    .container > .content{
+        width: 98%;
+    }
+}
