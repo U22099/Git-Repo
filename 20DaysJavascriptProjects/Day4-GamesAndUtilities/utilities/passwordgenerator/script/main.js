@@ -35,3 +35,11 @@ function generateRandomPassword(){
     output.value = string1+string2;
     output.innerHTML = string1+string2;
 }
+function save(){
+    navigator.clipboard.writeText(output.value);
+    output.value = "";
+    output.placeholder = "Added To Clipboard";
+    setTimeout(()=>{
+        output.placeholder = "";
+    }, 2000);
+}

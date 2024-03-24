@@ -42,6 +42,12 @@ body{
     outline: none;
     border: 2px solid black;
 }
+.container > .content i{
+    font-size: 1.5em;
+    position: relative;
+    left: -40px;
+    bottom: 0px;
+}
 .container > .content button{
     display: flex;
     justify-content: center;
