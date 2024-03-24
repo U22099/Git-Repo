@@ -51,6 +51,7 @@ function next(){
     title.innerHTML = musTitles[count];
     artist.innerHTML = artistNames[count];
     musicPlayer.play();
+    slider.max = musicPlayer.duration;
     ctrlIcon.classList.remove("fa-play");
     ctrlIcon.classList.add("fa-pause");
 }
@@ -63,6 +64,7 @@ function previous(){
     title.innerHTML = musTitles[count];
     artist.innerHTML = artistNames[count];
     musicPlayer.play();
+    slider.max = musicPlayer.duration;
     ctrlIcon.classList.remove("fa-play");
     ctrlIcon.classList.add("fa-pause");
 }
