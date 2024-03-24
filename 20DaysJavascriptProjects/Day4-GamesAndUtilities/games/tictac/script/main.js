@@ -19,6 +19,7 @@ let r = 0;
 let z = 0;
 let toastdiv;
 let toast;
+let pause = false;
 window.onload = function(){
     col1 = document.querySelector("#col1");
     col2 = document.querySelector("#col2");
@@ -208,6 +209,7 @@ function showToast(x){
     toastdiv.style.visibility = "visible";
     toast.style.visibility = "visible";
     toast.innerHTML = x;
+    pause = true;
     setTimeout(function(){
         toast.innerHTML = "Click to reset";
         toast.style.cursor = "pointer";
@@ -226,6 +228,7 @@ function showToast(x){
             arr [8] = "";
             updateBoard(arr);    
             randassign();
+            pause = false;
     })}, 2000);
 }
 function showWin(x){
@@ -248,7 +251,7 @@ function showWin(x){
     amt.innerHTML = r;
 }
 function run1(){
-    if(col1.innerHTML == ""){
+    if(col1.innerHTML == ""&&!pause){
         col1.innerHTML = playerSign;
         let win = checkWin();        
         if(win == playerSign){
@@ -261,7 +264,7 @@ function run1(){
     }
 }
 function run2(){
-    if(col2.innerHTML == ""){
+    if(col2.innerHTML == ""&&!pause){
         col2.innerHTML = playerSign;
         let win = checkWin();       
         if(win == playerSign){
@@ -274,7 +277,7 @@ function run2(){
     }
 }
 function run3(){
-    if(col3.innerHTML == ""){
+    if(col3.innerHTML == ""&&!pause){
         col3.innerHTML = playerSign;
         let win = checkWin();        
         if(win == playerSign){
@@ -287,7 +290,7 @@ function run3(){
     }
 }
 function run4(){
-    if(col4.innerHTML == ""){
+    if(col4.innerHTML == ""&&!pause){
         col4.innerHTML = playerSign;
         let win = checkWin();        
         if(win == playerSign){
@@ -300,7 +303,7 @@ function run4(){
     }
 }
 function run5(){
-    if(col5.innerHTML == ""){
+    if(col5.innerHTML == ""&&!pause){
         col5.innerHTML = playerSign;
         let win = checkWin();        
         if(win == playerSign){
@@ -313,7 +316,7 @@ function run5(){
     }
 }
 function run6(){
-    if(col6.innerHTML == ""){
+    if(col6.innerHTML == ""&&!pause){
         col6.innerHTML = playerSign;
         let win = checkWin();        
         if(win == playerSign){
@@ -326,7 +329,7 @@ function run6(){
     }
 }
 function run7(){
-    if(col7.innerHTML == ""){
+    if(col7.innerHTML == ""&&!pause){
         col7.innerHTML = playerSign;
         let win = checkWin();        
         if(win == playerSign){
@@ -339,7 +342,7 @@ function run7(){
     }
 }
 function run8(){
-    if(col8.innerHTML == ""){
+    if(col8.innerHTML == ""&&!pause){
         col8.innerHTML = playerSign;
         let win = checkWin();        
         if(win == playerSign){
@@ -352,7 +355,7 @@ function run8(){
     }
 }
 function run9(){
-    if(col9.innerHTML == ""){
+    if(col9.innerHTML == ""&&!pause){
         col9.innerHTML = playerSign;
         let win = checkWin();        
         if(win == playerSign){
