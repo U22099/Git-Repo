@@ -18,7 +18,7 @@ function calculate(){
         let mlim = new Date(currentDate.getFullYear(), currentDate.getMonth(), 0).getDate();
         d += mlim;
     }
-    if(currentDate.getMonth()>=birthdate.getMonth()){
+    if(currentDate.getMonth()<=birthdate.getMonth()){
         y += 1;
     }
     output.innerHTML = "You are "+(y-1)+" Years "+m+" Months and "+d+" Days Old.";
