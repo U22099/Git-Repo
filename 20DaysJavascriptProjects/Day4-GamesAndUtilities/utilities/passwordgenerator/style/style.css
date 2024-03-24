@@ -72,7 +72,11 @@ body{
     margin: 10px 0px;
 }
 @media (max-width:615px){
+    .container{
+        width: 100%;
+    }
     .container > .content{
-        width: 98%;
+        width: 95%;
+        padding: 20px;
     }
 }
