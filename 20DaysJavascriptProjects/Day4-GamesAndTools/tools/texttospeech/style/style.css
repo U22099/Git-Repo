@@ -27,7 +27,7 @@ body{
     align-items: center;
     height: 100%;
     color: white;
-    background-image: url(../../images/IMG_0972.JPG);
+    background-image: url(../../../images/IMG_0972.JPG);
     background-position: center;
     background-size: cover;
 }
@@ -105,6 +105,7 @@ body{
     margin: 0px 5px;
 }
 .container > .content > .section textarea{
+    resize: none;
     background-color: transparent;
     color: white;
     font-size: 2em;
