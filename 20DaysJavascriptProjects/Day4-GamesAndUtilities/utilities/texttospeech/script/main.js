@@ -44,7 +44,7 @@ function play(){
         txt.setAttribute("placeholder", x);
     }
     else if(txt.value == "$layemi"){
-        x = "You are one of a kind dear, special and loving, I'm so lucky to have you";
+        x = "Layemi, you are one of a kind, special and warm-hearted, I'm so lucky to have you";
         txt.value = "";
         txt.setAttribute("placeholder", x);
     }
