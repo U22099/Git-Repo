@@ -18,12 +18,12 @@ function calculate(){
         let mlim = new Date(currentDate.getFullYear(), currentDate.getMonth(), 0).getDate();
         d += mlim;
     }
-    if(currentDate.getMonth()<=birthdate.getMonth()){
+    if(currentDate.getMonth()>=birthdate.getMonth()){
         y += 1;
     }
     output.innerHTML = "You are "+(y-1)+" Years "+m+" Months and "+d+" Days Old.";
-    let speech = window.speechSynthesis;
-    let voices = speech.getVoices();
+    let speech = new SpeechSynthesisUtterance;
+    let voices = window.speechSynthesis.getVoices();
     speech.voice = voices[5];
     speech.text = output.innerHTML;
     window.speechSynthesis.speak(speech);

@@ -69,5 +69,9 @@ body{
 @media (max-width:615px){
     .container > .content{
         width: 98%;
+        padding: 10px;
+    }
+    .container > .content input{
+     width: 280px;
     }
 }

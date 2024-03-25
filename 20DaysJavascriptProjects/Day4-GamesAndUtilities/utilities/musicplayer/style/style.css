@@ -43,6 +43,7 @@ i:hover{
     background: none;
     border-radius: 20px;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 2px solid purple;
     padding: 20px;
     margin: 40px 0px;
@@ -56,6 +57,7 @@ i:hover{
 .container > .content > .nav i{
     background: none;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 2px solid purple;
     border-radius: 50%;
     padding: 20px;
@@ -89,6 +91,7 @@ i:hover{
     background: none;
     border-radius: 20px;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 2px solid purple;
     cursor: pointer;
 }
@@ -112,6 +115,7 @@ i:hover{
 .container > .content > .controls i{
     background: none;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 8px solid purple;
     color: black;
     text-align: center;

@@ -26,8 +26,7 @@ window.onload = ()=>{
         musicPlayer.play();
         ctrlIcon.classList.remove("fa-play");
         ctrlIcon.classList.add("fa-pause");
-    }
-    
+    }    
 }
 function playPause(){
     if(ctrlIcon.classList.contains("fa-pause")){
@@ -68,4 +67,3 @@ function previous(){
     ctrlIcon.classList.remove("fa-play");
     ctrlIcon.classList.add("fa-pause");
 }
-slider.max = musicPlayer.duration; 
