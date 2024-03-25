@@ -12,12 +12,10 @@ window.onload = function(){
     sec = document.querySelector(".sec");
     txt = document.querySelector("#txt");
     voiceSelect = document.querySelector("#voice");
-    window.speechSynthesis.onvoiceschanged = ()=>{
-        voices = window.speechSynthesis.getVoices();
-        speech.voice = voices[3];
-        voices.forEach((voice,i) => (voiceSelect.options[i] = new Option(voice.name,
-            i)));
-    }
+    voices = window.speechSynthesis.getVoices();
+    speech.voice = voices[5];
+    voices.forEach((voice,i) => (voiceSelect.options[i] = new Option(voice.name,
+        i)));
     voiceSelect.addEventListener("change", ()=>{
         speech.voice = voices[voiceSelect.value];
     });
