@@ -13,7 +13,7 @@ window.onload = function(){
     txt = document.querySelector("#txt");
     voiceSelect = document.querySelector("#voice");
     voices = window.speechSynthesis.getVoices();
-    speech.voice = voices[5];
+    speech.voice = voices[10];
     voices.forEach((voice,i) => (voiceSelect.options[i] = new Option(voice.name,i)));
     voiceSelect.addEventListener("change", ()=>{
         speech.voice = voices[voiceSelect.value];
