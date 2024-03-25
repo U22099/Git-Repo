@@ -16,7 +16,6 @@ window.onload = ()=>{
     title = document.querySelector("#title");
     artist = document.querySelector("#artist");
     slider.max = musicPlayer.duration;
-    console.log(slider.max);
     slider.value = musicPlayer.currentTime;
     setInterval(()=>{
         slider.value = musicPlayer.currentTime;
@@ -26,7 +25,8 @@ window.onload = ()=>{
         musicPlayer.play();
         ctrlIcon.classList.remove("fa-play");
         ctrlIcon.classList.add("fa-pause");
-    }    
+    }
+    
 }
 function playPause(){
     if(ctrlIcon.classList.contains("fa-pause")){
@@ -49,7 +49,7 @@ function next(){
     title.innerHTML = musTitles[count];
     artist.innerHTML = artistNames[count];
     musicPlayer.play();
-    slider.max = musicPlayer.duration; 
+    slider.max = musicPlayer.duration;
     ctrlIcon.classList.remove("fa-play");
     ctrlIcon.classList.add("fa-pause");
 }
@@ -63,7 +63,6 @@ function previous(){
     artist.innerHTML = artistNames[count];
     musicPlayer.play();
     slider.max = musicPlayer.duration;
-    console.log(slider.max);
     ctrlIcon.classList.remove("fa-play");
     ctrlIcon.classList.add("fa-pause");
 }
