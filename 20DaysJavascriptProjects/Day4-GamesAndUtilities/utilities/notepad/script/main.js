@@ -37,10 +37,10 @@ window.onload = ()=>{
     textbox4.value = localStorage.getItem(input4);
     textbox5.value = localStorage.getItem(input5);
     textbox6.value = localStorage.getItem(input6);
-    no = localStorage.getItem(noKeep);
-    if(no){
-        no += 1;
-    }
+    // no = localStorage.getItem(noKeep);
+    // if(no){
+    //     no += 1;
+    // }
 }
 function showNotepad(){
     let string;
@@ -48,27 +48,25 @@ function showNotepad(){
         alert("Max Notepads Reached");
         no = 0;
     }
+    no += 1;
+    localStorage.setItem(noKeep);
+    if(no == 1){
+        box1();
+    }
+    else if(no == 2){
+        box2();
+    }
+    else if(no == 3){
+        box3();
+    }
+    else if(no == 4){
+        box4();
+    }
+    else if(no == 5){
+        box5();
+    }
     else{
-        no += 1;
-        localStorage.setItem(noKeep);
-        if(no == 1){
-            box1();
-        }
-        else if(no == 2){
-            box2();
-        }
-        else if(no == 3){
-            box3();
-        }
-        else if(no == 4){
-            box4();
-        }
-        else if(no == 5){
-            box5();
-        }
-        else{
-            box6();
-        }
+        box6();
     }
 }
 function box1(){
