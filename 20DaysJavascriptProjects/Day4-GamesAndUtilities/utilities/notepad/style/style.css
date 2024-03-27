@@ -87,6 +87,10 @@ body{
     background-color: purple;
     border: none;
 }
+.container > .content > .header  > .btn i{
+    margin: 0px 10px 0px 0px;
+    font-size: 1.5em;
+}
 .container > .content > .main{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -97,7 +101,7 @@ body{
     border: 8px solid purple;
     padding: 20px;
 }
-.container > .content > .main > .sec1 textarea{
+.container > .content > .main > .sec1 > .box textarea{
     display: flex;
     align-items: center;
     color: white;
@@ -112,10 +116,24 @@ body{
     margin: 0px 0px 10px 0px;  
     visibility: hidden;
 }
-.container > .content > .main > .sec1 textarea:focus{
+.container > .content > .main > .sec1 > .box textarea:focus{
     outline: none;
 }
-.container > .content > .main > .sec2 textarea{
+.container > .content > .main > .sec1 > .box i{
+    background-color: purple;
+    font-size: 1.4em;
+    border-radius: 50%;
+    position: relative;
+    left: 100px;
+    bottom: -40px;
+    padding: 8px;
+    z-index: 1; 
+    visibility: hidden;
+}
+.container > .content > .main > .sec1 > .box i:hover{
+    cursor: pointer;
+}
+.container > .content > .main > .sec2 > .box textarea{
     display: flex;
     align-items: center;
     color: white;
@@ -130,8 +148,22 @@ body{
     margin: 0px 0px 10px 0px;  
     visibility: hidden;
 }
-.container > .content > .main > .sec2 textarea:focus{
+.container > .content > .main > .sec2 >.box textarea:focus{
     outline: none;
+}
+.container > .content > .main > .sec2 > .box i{
+    background-color: purple;
+    font-size: 1.4em;
+    border-radius: 50%;
+    position: relative;
+    left: 100px;
+    bottom: -40px;
+    padding: 8px;
+    z-index: 1; 
+    visibility: hidden;
+}
+.container > .content > .main > .sec2 > .box i:hover{
+    cursor: pointer;
 }
 @media (max-width: 615px){
     .container > .content{
@@ -143,12 +175,13 @@ body{
         padding: 0px;
         border: none;
         border-radius: none;
+        height: auto;
     }
-    .container > .content > .main > .sec1 textarea{
+    .container > .content > .main > .sec1 > .box textarea{
         width: 220px;
         height: 200px;
     }
-    .container > .content > .main > .sec2 textarea{
+    .container > .content > .main > .sec2 > .box textarea{
         width: 220px;
         height: 200px;
     }
