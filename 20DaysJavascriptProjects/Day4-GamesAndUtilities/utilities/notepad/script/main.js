@@ -45,28 +45,29 @@ window.onload = ()=>{
 function showNotepad(){
     let string;
     if(no == 6){
-        alert("Max Notepads Reached")
-        no = 0;
-    }
-    no += 1;
-    localStorage.setItem(noKeep);
-    if(no == 1){
-        box1();
-    }
-    else if(no == 2){
-        box2();
-    }
-    else if(no == 3){
-        box3();
-    }
-    else if(no == 4){
-        box4();
-    }
-    else if(no == 5){
-        box5();
+        alert("Max Notepads Reached");
     }
     else{
-        box6();
+        no += 1;
+        localStorage.setItem(noKeep);
+        if(no == 1){
+            box1();
+        }
+        else if(no == 2){
+            box2();
+        }
+        else if(no == 3){
+            box3();
+        }
+        else if(no == 4){
+            box4();
+        }
+        else if(no == 5){
+            box5();
+        }
+        else{
+            box6();
+        }
     }
 }
 function box1(){
