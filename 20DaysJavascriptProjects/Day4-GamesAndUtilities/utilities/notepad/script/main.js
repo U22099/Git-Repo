@@ -163,30 +163,35 @@ function box1Remove(){
 function box2Remove(){
     textbox2.style.visibility = "hidden";
     destroy2.style.visibility = "hidden";
+    clearInterval(int2);
     localStorage.clear(input2);
     no = 0;
 }
 function box3Remove(){
     textbox3.style.visibility = "hidden";
     destroy3.style.visibility = "hidden";
+    clearInterval(int3);
     localStorage.clear(input3);
     no = 0;
 }
 function box4Remove(){
     textbox4.style.visibility = "hidden";
     destroy4.style.visibility = "hidden";
+    clearInterval(int4);
     localStorage.clear(input4);
     no = 0;
 }
 function box5Remove(){
     textbox5.style.visibility = "hidden";
     destroy5.style.visibility = "hidden";
+    clearInterval(int5);
     localStorage.clear(input5);
     no = 0;
 }
 function box6Remove(){
     textbox6.style.visibility = "hidden";
     destroy6.style.visibility = "hidden";
+    clearInterval(int6);
     localStorage.clear(input6);
     no = 0;
 }
