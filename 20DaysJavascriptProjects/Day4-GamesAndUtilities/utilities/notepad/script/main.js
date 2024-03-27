@@ -46,6 +46,7 @@ function showNotepad(){
     let string;
     if(no == 6){
         alert("Max Notepads Reached");
+        no = 0;
     }
     else{
         no += 1;
