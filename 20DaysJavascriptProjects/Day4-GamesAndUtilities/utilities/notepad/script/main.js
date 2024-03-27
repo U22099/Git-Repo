@@ -17,6 +17,7 @@ let state3 = "state3";
 let state4 = "state4";
 let state5 = "state5";
 let state6 = "state6";
+let noKeep = "noKeep";
 window.onload = ()=>{
     textbox1 = document.querySelector("#txt1");
     textbox2 = document.querySelector("#txt2");
@@ -36,6 +37,10 @@ window.onload = ()=>{
     textbox4.value = localStorage.getItem(input4);
     textbox5.value = localStorage.getItem(input5);
     textbox6.value = localStorage.getItem(input6);
+    no = localStorage.getItem(noKeep);
+    if(no){
+        no += 1;
+    }
 }
 function showNotepad(){
     let string;
@@ -44,6 +49,7 @@ function showNotepad(){
         no = 0;
     }
     no += 1;
+    localStorage.setItem(noKeep);
     if(no == 1){
         box1();
     }
