@@ -64,7 +64,7 @@ window.onload = ()=>{
 function showNotepad(){
     let string;
     if(no == 6){
-        alert("Max Notepads Reached");
+        alert("Max Notepads Reached")
         no = 0;
     }
     no += 1;
