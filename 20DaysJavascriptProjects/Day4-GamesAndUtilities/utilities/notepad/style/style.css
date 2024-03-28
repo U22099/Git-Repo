@@ -215,7 +215,7 @@ dialog::backdrop{
 }
 @media (max-width: 615px){
     dialog{
-        padding: 10px;
+        padding: 8px;
     }
     .container > .content{
         width: 80%;
