@@ -29,7 +29,14 @@ let state3 = "state3";
 let state4 = "state4";
 let state5 = "state5";
 let state6 = "state6";
+let dialog;
+let dialog2;
+let dialog3;
+let pswset;
+let pswent;
+let password;
 window.onload = ()=>{
+    
     textbox1 = document.querySelector("#txt1");
     textbox2 = document.querySelector("#txt2");
     textbox3 = document.querySelector("#txt3");
@@ -60,6 +67,50 @@ window.onload = ()=>{
     textbox4.value = localStorage.getItem(input4);
     textbox5.value = localStorage.getItem(input5);
     textbox6.value = localStorage.getItem(input6);
+    dialog = document.querySelector("#pswsetdialog");
+    dialog2 = document.querySelector("#pswdialog");
+    dialog3 = document.querySelector("#resetdialog");
+    pswset = document.querySelector("#pswset");
+    pswreminder = document.querySelector("#pswreminder");
+    pswent = document.querySelector("#pswent");
+    pswrem = document.querySelector("#pswrem");
+    pswnew = document.querySelector("#pswnew");
+    password = localStorage.getItem("psw");
+    if(password){
+        dialog2.showModal();
+    }
+    else{
+        dialog.showModal();
+    }
+}
+function chkPsw(){
+    if(pswent.value == localStorage.getItem("psw")){
+        dialog2.close();
+    }
+    else if(pswent.value =="$PASSWORDRESET$"){
+        dialog2.close();
+        dialog3.showModal();
+    }
+    else{
+        pswent.value = "";
+        alert("Wrong Password, If you have forgotten your password type in \"$PASSWORDRESET$\" to reset your password.");
+    }
+}
+function setPsw(){
+    localStorage.setItem("psw", pswset.value);
+    localStorage.setItem("pswreminder", pswreminder.value);
+    dialog.close();
+    alert("Your password is: "+pswset.value+" And your password reminder is: "+pswreminder.value);
+}
+function pswReset(){
+    if(localStorage.getItem("pswreminder") == pswrem.value){
+        localStorage.setItem("psw", pswnew.value);
+        dialog3.close();
+        alert("New password is: "+pswnew.value);
+    }
+    else{
+        alert("Wrong Input!");
+    }
 }
 function showNotepad(){
     let string;
@@ -69,22 +120,52 @@ function showNotepad(){
     }
     no += 1;
     if(no == 1){
-        box1();
+        if(textbox1.style.visibility == "visible"){
+            no += 1;
+        }
+        else{
+            box1();
+        }
     }
-    else if(no == 2){
-        box2();
+    if(no == 2){
+        if(textbox2.style.visibility == "visible"){
+            no += 1;
+        }
+        else{
+            box2();
+        }
     }
-    else if(no == 3){
-        box3();
+    if(no == 3){
+        if(textbox3.style.visibility == "visible"){
+            no += 1;
+        }
+        else{
+            box3();
+        }
     }
-    else if(no == 4){
-        box4();
+    if(no == 4){
+        if(textbox4.style.visibility == "visible"){
+            no += 1;
+        }
+        else{
+            box4();
+        }
     }
-    else if(no == 5){
-        box5();
+    if(no == 5){
+        if(textbox5.style.visibility == "visible"){
+            no += 1;
+        }
+        else{
+            box5();
+        }
     }
-    else{
-        box6();
+    if(no == 6){
+        if(textbox6.style.visibility == "visible"){
+            no += 1;
+        }
+        else{
+            box6();
+        }
     }
 }
 function box1(){
@@ -157,41 +238,47 @@ function box1Remove(){
     textbox1.style.visibility = "hidden";
     destroy1.style.visibility = "hidden";
     clearInterval(int1);
-    localStorage.clear(input1);
+    localStorage.removeItem(input1);
+    localStorage.removeItem(state1);
     no = 0;
 }
 function box2Remove(){
     textbox2.style.visibility = "hidden";
     destroy2.style.visibility = "hidden";
     clearInterval(int2);
-    localStorage.clear(input2);
+    localStorage.removeItem(input2);
+    localStorage.removeItem(state2);
     no = 0;
 }
 function box3Remove(){
     textbox3.style.visibility = "hidden";
     destroy3.style.visibility = "hidden";
     clearInterval(int3);
-    localStorage.clear(input3);
+    localStorage.removeItem(input3);
+    localStorage.removeItem(state3);
     no = 0;
 }
 function box4Remove(){
     textbox4.style.visibility = "hidden";
     destroy4.style.visibility = "hidden";
     clearInterval(int4);
-    localStorage.clear(input4);
+    localStorage.removeItem(input4);
+    localStorage.removeItem(state4);
     no = 0;
 }
 function box5Remove(){
     textbox5.style.visibility = "hidden";
     destroy5.style.visibility = "hidden";
     clearInterval(int5);
-    localStorage.clear(input5);
+    localStorage.removeItem(input5);
+    localStorage.removeItem(state5);
     no = 0;
 }
 function box6Remove(){
     textbox6.style.visibility = "hidden";
     destroy6.style.visibility = "hidden";
     clearInterval(int6);
-    localStorage.clear(input6);
+    localStorage.removeItem(input6);
+    localStorage.removeItem(state6);
     no = 0;
 }

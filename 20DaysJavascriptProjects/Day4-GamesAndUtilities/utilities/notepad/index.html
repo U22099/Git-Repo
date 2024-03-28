@@ -43,6 +43,23 @@
                     </div>
                 </section>
             </main>
+            <dialog id="pswsetdialog">
+                <h1>Set New Password:</h1>
+                <input autofocus type="password" name="pass" id="pswset">
+                <input autofocus type="password" name="pass" id="pswreminder" placeholder="Type in a password reminder">
+                <button onclick="setPsw()">Set Password</button>
+            </dialog>
+            <dialog id="pswdialog">
+                <h1>Enter Password:</h1>
+                <input autofocus type="password" name="pass" id="pswent">
+                <button onclick="chkPsw()">Enter</button>
+            </dialog>
+            <dialog id="resetdialog">
+                <h1>Password Reset:</h1>
+                <input autofocus type="password" name="pass" id="pswrem" placeholder="Input your reminder">
+                <input autofocus type="password" name="pass" id="pswnew" placeholder="Input new Password">
+                <button onclick="pswReset()">Reset Password</button>
+            </dialog>
         </div>
     </div>
 </body>

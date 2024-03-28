@@ -124,7 +124,7 @@ body{
     font-size: 1.4em;
     border-radius: 50%;
     position: relative;
-    left: 90px;
+    left: 180px;
     bottom: -40px;
     padding: 8px;
     z-index: 1; 
@@ -156,7 +156,7 @@ body{
     font-size: 1.4em;
     border-radius: 50%;
     position: relative;
-    left: 90px;
+    left: 180px;
     bottom: -50px;
     padding: 8px;
     z-index: 1; 
@@ -164,6 +164,54 @@ body{
 }
 .container > .content > .main > .sec2 > .box i:hover{
     cursor: pointer;
+}
+dialog{
+    text-align: center;
+    background: none;
+    color: white;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: 8px solid purple;
+    padding: 40px;
+}
+dialog h1{
+    margin: 10px 0px;
+}
+dialog input{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+    background: none;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 4px solid purple;
+    padding: 5px 10px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+dialog input:focus{
+    outline: none;
+}
+dialog button{
+    background-color: purple;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 1.3em;
+    height: 40px;
+}
+dialog button:active{
+    border: none;
+}
+dialog button:hover{
+    cursor: pointer;
+}
+dialog::backdrop{
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 @media (max-width: 615px){
     .container > .content{
@@ -184,5 +232,13 @@ body{
     .container > .content > .main > .sec2 > .box textarea{
         width: 220px;
         height: 200px;
+    }
+    .container > .content > .main > .sec1 > .box i{
+        left: 90px;
+        bottom: -40px;
+    }
+    .container > .content > .main > .sec2 > .box i{
+        left: 90px;
+        bottom: -40px;
     }
 }
