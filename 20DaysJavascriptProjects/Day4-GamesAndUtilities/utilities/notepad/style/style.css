@@ -214,6 +214,9 @@ dialog::backdrop{
     -webkit-backdrop-filter: blur(10px);
 }
 @media (max-width: 615px){
+    dialog{
+        padding: 10px;
+    }
     .container > .content{
         width: 80%;
         padding: 20px;
