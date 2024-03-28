@@ -221,6 +221,7 @@ dialog::backdrop{
     .container > .content > .main{
         grid-template-columns: 1fr;
         padding: 0px;
+        width: 100%;
         border: none;
         border-radius: none;
         height: auto;
