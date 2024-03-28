@@ -76,6 +76,9 @@ window.onload = ()=>{
     pswrem = document.querySelector("#pswrem");
     pswnew = document.querySelector("#pswnew");
     password = localStorage.getItem("psw");
+    dialog.close();
+    dialog2.close();
+    dialog3.close();
     if(password){
         dialog2.showModal();
     }
