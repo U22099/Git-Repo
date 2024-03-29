@@ -50,24 +50,6 @@ window.onload = ()=>{
     destroy4 = document.querySelector("#des4");
     destroy5 = document.querySelector("#des5");
     destroy6 = document.querySelector("#des6");
-    textbox1.style.visibility = localStorage.getItem(state1);
-    textbox2.style.visibility = localStorage.getItem(state2);
-    textbox3.style.visibility = localStorage.getItem(state3);
-    textbox4.style.visibility = localStorage.getItem(state4);
-    textbox5.style.visibility = localStorage.getItem(state5);
-    textbox6.style.visibility = localStorage.getItem(state6);
-    destroy1.style.visibility = localStorage.getItem(state1);
-    destroy2.style.visibility = localStorage.getItem(state2);
-    destroy3.style.visibility = localStorage.getItem(state3);
-    destroy4.style.visibility = localStorage.getItem(state4);
-    destroy5.style.visibility = localStorage.getItem(state5);
-    destroy6.style.visibility = localStorage.getItem(state6);
-    textbox1.value = localStorage.getItem(input1);
-    textbox2.value = localStorage.getItem(input2);
-    textbox3.value = localStorage.getItem(input3);
-    textbox4.value = localStorage.getItem(input4);
-    textbox5.value = localStorage.getItem(input5);
-    textbox6.value = localStorage.getItem(input6);
     body = document.getElementsByTagName("BODY")[0];
     dialogContainer = document.querySelector(".dialog-container");
     dialog = document.querySelector("#pswsetdialog");
@@ -88,6 +70,24 @@ window.onload = ()=>{
 }
 function chkPsw(){
     if(pswent.value == localStorage.getItem("psw")){
+        textbox1.style.visibility = localStorage.getItem(state1);
+        textbox2.style.visibility = localStorage.getItem(state2);
+        textbox3.style.visibility = localStorage.getItem(state3);
+        textbox4.style.visibility = localStorage.getItem(state4);
+        textbox5.style.visibility = localStorage.getItem(state5);
+        textbox6.style.visibility = localStorage.getItem(state6);
+        destroy1.style.visibility = localStorage.getItem(state1);
+        destroy2.style.visibility = localStorage.getItem(state2);
+        destroy3.style.visibility = localStorage.getItem(state3);
+        destroy4.style.visibility = localStorage.getItem(state4);
+        destroy5.style.visibility = localStorage.getItem(state5);
+        destroy6.style.visibility = localStorage.getItem(state6);
+        textbox1.value = localStorage.getItem(input1);
+        textbox2.value = localStorage.getItem(input2);
+        textbox3.value = localStorage.getItem(input3);
+        textbox4.value = localStorage.getItem(input4);
+        textbox5.value = localStorage.getItem(input5);
+        textbox6.value = localStorage.getItem(input6);
         closeDialog(dialog2);
     }
     else if(pswent.value =="$PASSWORDRESET$"){
@@ -108,6 +108,24 @@ function setPsw(){
 function pswReset(){
     if(localStorage.getItem("pswreminder") == pswrem.value){
         localStorage.setItem("psw", pswnew.value);
+        textbox1.style.visibility = localStorage.getItem(state1);
+        textbox2.style.visibility = localStorage.getItem(state2);
+        textbox3.style.visibility = localStorage.getItem(state3);
+        textbox4.style.visibility = localStorage.getItem(state4);
+        textbox5.style.visibility = localStorage.getItem(state5);
+        textbox6.style.visibility = localStorage.getItem(state6);
+        destroy1.style.visibility = localStorage.getItem(state1);
+        destroy2.style.visibility = localStorage.getItem(state2);
+        destroy3.style.visibility = localStorage.getItem(state3);
+        destroy4.style.visibility = localStorage.getItem(state4);
+        destroy5.style.visibility = localStorage.getItem(state5);
+        destroy6.style.visibility = localStorage.getItem(state6);
+        textbox1.value = localStorage.getItem(input1);
+        textbox2.value = localStorage.getItem(input2);
+        textbox3.value = localStorage.getItem(input3);
+        textbox4.value = localStorage.getItem(input4);
+        textbox5.value = localStorage.getItem(input5);
+        textbox6.value = localStorage.getItem(input6);
         closeDialog(dialog3);
         alert("New password is: "+pswnew.value);
     }

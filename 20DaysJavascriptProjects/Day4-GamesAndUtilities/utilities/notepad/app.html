@@ -34,7 +34,7 @@
             justify-content: center;
             align-items: center;
             height: 100%;
-            background-color: black;
+            background-image: url("../../../images/IMG_0972.JPG");
             background-position: center;
             /* background-size: cover; */
         }
@@ -243,7 +243,7 @@
             .container > .content >.dialog-container > .dialog{
                 padding: 8px;
                 border-radius: 20px;
-                bottom: 88%;
+                bottom: 50%;
             }
             .container > .content >.dialog-container > .dialog input{
                 width: 200px;
@@ -334,24 +334,7 @@
             destroy4 = document.querySelector("#des4");
             destroy5 = document.querySelector("#des5");
             destroy6 = document.querySelector("#des6");
-            textbox1.style.visibility = localStorage.getItem(state1);
-            textbox2.style.visibility = localStorage.getItem(state2);
-            textbox3.style.visibility = localStorage.getItem(state3);
-            textbox4.style.visibility = localStorage.getItem(state4);
-            textbox5.style.visibility = localStorage.getItem(state5);
-            textbox6.style.visibility = localStorage.getItem(state6);
-            destroy1.style.visibility = localStorage.getItem(state1);
-            destroy2.style.visibility = localStorage.getItem(state2);
-            destroy3.style.visibility = localStorage.getItem(state3);
-            destroy4.style.visibility = localStorage.getItem(state4);
-            destroy5.style.visibility = localStorage.getItem(state5);
-            destroy6.style.visibility = localStorage.getItem(state6);
-            textbox1.value = localStorage.getItem(input1);
-            textbox2.value = localStorage.getItem(input2);
-            textbox3.value = localStorage.getItem(input3);
-            textbox4.value = localStorage.getItem(input4);
-            textbox5.value = localStorage.getItem(input5);
-            textbox6.value = localStorage.getItem(input6);
+            body = document.getElementsByTagName("BODY")[0];
             dialogContainer = document.querySelector(".dialog-container");
             dialog = document.querySelector("#pswsetdialog");
             dialog2 = document.querySelector("#pswdialog");
@@ -371,6 +354,24 @@
         }
         function chkPsw(){
             if(pswent.value == localStorage.getItem("psw")){
+                textbox1.style.visibility = localStorage.getItem(state1);
+                textbox2.style.visibility = localStorage.getItem(state2);
+                textbox3.style.visibility = localStorage.getItem(state3);
+                textbox4.style.visibility = localStorage.getItem(state4);
+                textbox5.style.visibility = localStorage.getItem(state5);
+                textbox6.style.visibility = localStorage.getItem(state6);
+                destroy1.style.visibility = localStorage.getItem(state1);
+                destroy2.style.visibility = localStorage.getItem(state2);
+                destroy3.style.visibility = localStorage.getItem(state3);
+                destroy4.style.visibility = localStorage.getItem(state4);
+                destroy5.style.visibility = localStorage.getItem(state5);
+                destroy6.style.visibility = localStorage.getItem(state6);
+                textbox1.value = localStorage.getItem(input1);
+                textbox2.value = localStorage.getItem(input2);
+                textbox3.value = localStorage.getItem(input3);
+                textbox4.value = localStorage.getItem(input4);
+                textbox5.value = localStorage.getItem(input5);
+                textbox6.value = localStorage.getItem(input6);
                 closeDialog(dialog2);
             }
             else if(pswent.value =="$PASSWORDRESET$"){
@@ -391,6 +392,24 @@
         function pswReset(){
             if(localStorage.getItem("pswreminder") == pswrem.value){
                 localStorage.setItem("psw", pswnew.value);
+                textbox1.style.visibility = localStorage.getItem(state1);
+                textbox2.style.visibility = localStorage.getItem(state2);
+                textbox3.style.visibility = localStorage.getItem(state3);
+                textbox4.style.visibility = localStorage.getItem(state4);
+                textbox5.style.visibility = localStorage.getItem(state5);
+                textbox6.style.visibility = localStorage.getItem(state6);
+                destroy1.style.visibility = localStorage.getItem(state1);
+                destroy2.style.visibility = localStorage.getItem(state2);
+                destroy3.style.visibility = localStorage.getItem(state3);
+                destroy4.style.visibility = localStorage.getItem(state4);
+                destroy5.style.visibility = localStorage.getItem(state5);
+                destroy6.style.visibility = localStorage.getItem(state6);
+                textbox1.value = localStorage.getItem(input1);
+                textbox2.value = localStorage.getItem(input2);
+                textbox3.value = localStorage.getItem(input3);
+                textbox4.value = localStorage.getItem(input4);
+                textbox5.value = localStorage.getItem(input5);
+                textbox6.value = localStorage.getItem(input6);
                 closeDialog(dialog3);
                 alert("New password is: "+pswnew.value);
             }
@@ -401,10 +420,14 @@
         function showDialog(x){
             dialogContainer.style.visibility = "visible";
             x.style.visibility = "visible";
+            body.style.height = "100%";
+            body.style.overflow = "hidden";
         }
         function closeDialog(x){
             dialogContainer.style.visibility = "hidden";
             x.style.visibility = "hidden";
+            body.style.height = "auto%";
+            body.style.overflow = "auto";
         }
         function showNotepad(){
             let string;
