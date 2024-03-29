@@ -243,6 +243,8 @@ body{
     }
     .container > .content >.dialog-container > .dialog button{
         width: 180px;
+        height: max-content;
+        padding: 8px 10px;
     }
     .container > .content{
         width: 80%;
