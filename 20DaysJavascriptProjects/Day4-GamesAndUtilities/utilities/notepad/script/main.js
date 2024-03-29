@@ -68,6 +68,7 @@ window.onload = ()=>{
     textbox4.value = localStorage.getItem(input4);
     textbox5.value = localStorage.getItem(input5);
     textbox6.value = localStorage.getItem(input6);
+    body = document.getElementsByTagName("BODY")[0];
     dialogContainer = document.querySelector(".dialog-container");
     dialog = document.querySelector("#pswsetdialog");
     dialog2 = document.querySelector("#pswdialog");
@@ -117,10 +118,14 @@ function pswReset(){
 function showDialog(x){
     dialogContainer.style.visibility = "visible";
     x.style.visibility = "visible";
+    body.style.height = "100%";
+    body.style.overflow = "hidden";
 }
 function closeDialog(x){
     dialogContainer.style.visibility = "hidden";
     x.style.visibility = "hidden";
+    body.style.height = "auto%";
+    body.style.overflow = "auto";
 }
 function showNotepad(){
     let string;

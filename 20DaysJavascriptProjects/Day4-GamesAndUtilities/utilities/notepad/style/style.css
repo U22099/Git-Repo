@@ -174,7 +174,6 @@ body{
     right: 0px;
     top: 0px;
     bottom: 0px;
-    height: 600px;
     background-color: black;
     border: 4px solid purple;
     border-radius: 40px;
@@ -237,7 +236,7 @@ body{
     .container > .content >.dialog-container > .dialog{
         padding: 8px;
         border-radius: 20px;
-        bottom: 88%;
+        bottom: 50%;
     }
     .container > .content >.dialog-container > .dialog input{
         width: 200px;
