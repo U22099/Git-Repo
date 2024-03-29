@@ -1,7 +1,7 @@
-let check = window.localStorage.getItem("check");
-if(check != "visited"){
-    window.location = "index.html";
-}
+// let check = window.localStorage.getItem("check");
+// if(check != "visited"){
+//     window.location = "index.html";
+// }
 localStorage.removeItem("check");
 let img;
 let text;
