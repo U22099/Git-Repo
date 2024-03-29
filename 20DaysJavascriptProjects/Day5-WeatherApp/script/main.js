@@ -17,7 +17,8 @@ window.onload = ()=>{
     img = document.querySelector("#img"); 
 }
 async function checkWeather(){
-    let city = cityInput.value;
+    let x = cityInput.value;
+    let city = x.split(' ').join('');
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`+"&units=metric");
     if(response.status == 404){
         document.querySelector(".main").style.display = "none";
