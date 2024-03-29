@@ -23,6 +23,7 @@ async function checkWeather(){
         document.querySelector(".main").style.display = "none";
         document.querySelector(".error").style.display = "flex";
         document.querySelector(".error").style.color = "red";
+        container.style.height = "100vh";
     }
     else{
         let data = await response.json();
@@ -30,7 +31,7 @@ async function checkWeather(){
         tempOutput.innerHTML = data.main.temp +"℃";
         humOutput.innerHTML = data.main.humidity +"%";
         windOutput.innerHTML = data.wind.speed +"km/h";
-        desOutput.innerHTML = data.weather.description;
+        desOutput.innerHTML = data.weather[0].description;
         document.querySelector(".main").style.display = "block";
         container.style.height = "100%";
         document.querySelector(".error").style.display = "none";
