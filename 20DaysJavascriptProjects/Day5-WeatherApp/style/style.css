@@ -111,9 +111,11 @@ body{
 }
 .container > .content > .main >.footer > .humidity i{
     font-size: 3em;
+    margin: 0px 5px 0px 0px;
 }
-.container > .content > .main >.footer > .weather i{
+.container > .content > .main >.footer > .windspeed i{
     font-size: 3em;
+    margin: 0px 5px 0px 0px;
 }
 .container > .content > .main >.footer > .humidity{
     display: flex;
