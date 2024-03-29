@@ -37,27 +37,21 @@ async function checkWeather(){
         document.querySelector(".error").style.display = "none";
         if(data.weather[0].main == "Rain"){
             img.src = "images/rain.jpg";
-            console.log(data.weather[0].main);
         }
         else if(data.weather[0].main == "Snow"){
             img.src = "images/snow.jpg";
-            console.log(data.weather[0].main);
         }
-        else if(data.weather[0].main == "Cloud"){
-            img.src = "images/cloud.jpg";
-            console.log(data.weather[0].main);
+        else if(data.weather[0].main == "Clouds"){
+            img.src = "images/cloudy.jpg";
         }
         else if(data.weather[0].main == "Clear"){
             img.src = "images/sun.jpg";
-            console.log(data.weather[0].main);
         }
         else if(data.weather[0].main == "Drizzle"){
             img.src = "images/drizzle.jpg";
-            console.log(data.weather[0].main);
         }
         else if(data.weather[0].main == "Mist"){
             img.src = "images/partSun.jpg";
-            console.log(data.weather[0].main);
         }
     }
 }
