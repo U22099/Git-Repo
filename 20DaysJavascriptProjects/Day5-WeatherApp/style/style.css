@@ -109,8 +109,11 @@ body{
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
 }
-.container > .content > .main >.footer > .humidity p{
-    font-size: 2em;
+.container > .content > .main >.footer > .humidity i{
+    font-size: 3em;
+}
+.container > .content > .main >.footer > .weather i{
+    font-size: 3em;
 }
 .container > .content > .main >.footer > .humidity{
     display: flex;

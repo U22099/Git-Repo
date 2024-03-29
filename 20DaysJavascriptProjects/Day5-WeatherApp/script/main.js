@@ -35,23 +35,23 @@ async function checkWeather(){
         document.querySelector(".main").style.display = "block";
         container.style.height = "100%";
         document.querySelector(".error").style.display = "none";
-    }
-    if(data.weather[0].main == "Rain"){
-        img.src = "images/rain.jpg";
-    }
-    else if(data.weather[0].main == "Snow"){
-        img.src = "images/snow.jpg";
-    }
-    else if(data.weather[0].main == "Cloud"){
-        img.src = "images/cloud.jpg";
-    }
-    else if(data.weather[0].main == "Clear"){
-        img.src = "images/sun.jpg";
-    }
-    else if(data.weather[0].main == "Drizzle"){
-        img.src = "images/drizzle.jpg";
-    }
-    else if(data.weather[0].main == "Mist"){
-        img.src = "images/partSun.jpg";
+        if(data.weather[0].main == "Rain"){
+            img.src = "images/rain.jpg";
+        }
+        else if(data.weather[0].main == "Snow"){
+            img.src = "images/snow.jpg";
+        }
+        else if(data.weather[0].main == "Cloud"){
+            img.src = "images/cloud.jpg";
+        }
+        else if(data.weather[0].main == "Clear"){
+            img.src = "images/sun.jpg";
+        }
+        else if(data.weather[0].main == "Drizzle"){
+            img.src = "images/drizzle.jpg";
+        }
+        else if(data.weather[0].main == "Mist"){
+            img.src = "images/partSun.jpg";
+        }
     }
 }
