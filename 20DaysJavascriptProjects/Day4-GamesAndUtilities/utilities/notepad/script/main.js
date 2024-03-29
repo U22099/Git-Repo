@@ -29,6 +29,7 @@ let state3 = "state3";
 let state4 = "state4";
 let state5 = "state5";
 let state6 = "state6";
+let dialogContainer;
 let dialog;
 let dialog2;
 let dialog3;
@@ -67,6 +68,7 @@ window.onload = ()=>{
     textbox4.value = localStorage.getItem(input4);
     textbox5.value = localStorage.getItem(input5);
     textbox6.value = localStorage.getItem(input6);
+    dialogContainer = document.querySelector(".dialog-container");
     dialog = document.querySelector("#pswsetdialog");
     dialog2 = document.querySelector("#pswdialog");
     dialog3 = document.querySelector("#resetdialog");
@@ -76,23 +78,20 @@ window.onload = ()=>{
     pswrem = document.querySelector("#pswrem");
     pswnew = document.querySelector("#pswnew");
     password = localStorage.getItem("psw");
-    dialog.close();
-    dialog2.close();
-    dialog3.close();
     if(password){
-        dialog2.showModal();
+        showDialog(dialog2);
     }
     else{
-        dialog.showModal();
+        showDialog(dialog);
     }
 }
 function chkPsw(){
     if(pswent.value == localStorage.getItem("psw")){
-        dialog2.close();
+        closeDialog(dialog2);
     }
     else if(pswent.value =="$PASSWORDRESET$"){
-        dialog2.close();
-        dialog3.showModal();
+        closeDialog(dialog2);
+        showDialog(dialog3);
     }
     else{
         pswent.value = "";
@@ -102,18 +101,26 @@ function chkPsw(){
 function setPsw(){
     localStorage.setItem("psw", pswset.value);
     localStorage.setItem("pswreminder", pswreminder.value);
-    dialog.close();
+    closeDialog(dialog);
     alert("Your password is: "+pswset.value+" And your password reminder is: "+pswreminder.value);
 }
 function pswReset(){
     if(localStorage.getItem("pswreminder") == pswrem.value){
         localStorage.setItem("psw", pswnew.value);
-        dialog3.close();
+        closeDialog(dialog3);
         alert("New password is: "+pswnew.value);
     }
     else{
         alert("Wrong Input!");
     }
+}
+function showDialog(x){
+    dialogContainer.style.visibility = "visible";
+    x.style.visibility = "visible";
+}
+function closeDialog(x){
+    dialogContainer.style.visibility = "hidden";
+    x.style.visibility = "hidden";
 }
 function showNotepad(){
     let string;

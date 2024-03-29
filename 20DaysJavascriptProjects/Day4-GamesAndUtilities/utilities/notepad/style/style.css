@@ -165,7 +165,24 @@ body{
 .container > .content > .main > .sec2 > .box i:hover{
     cursor: pointer;
 }
-dialog{
+.container > .content >.dialog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: black;
+    border: 4px solid purple;
+    border-radius: 40px;
+    visibility: hidden;
+    z-index: 1;
+}
+.container > .content >.dialog-container > .dialog{
+    display: grid;
+    grid-template-columns: 1fr;
     text-align: center;
     background: none;
     color: white;
@@ -174,11 +191,17 @@ dialog{
     border-radius: 50px;
     border: 8px solid purple;
     padding: 40px;
+    position: absolute;
+    bottom: 70% ;
+    width: max-content;
+    height: max-content;
+    z-index: 2;
+    visibility: hidden;
 }
-dialog h1{
+.container > .content >.dialog-container > .dialog h1{
     margin: 10px 0px;
 }
-dialog input{
+.container > .content >.dialog-container > .dialog input{
     display: flex;
     align-items: center;
     color: white;
@@ -192,10 +215,10 @@ dialog input{
     height: 30px;
     margin-bottom: 10px;
 }
-dialog input:focus{
+.container > .content >.dialog-container > .dialog input:focus{
     outline: none;
 }
-dialog button{
+.container > .content >.dialog-container > .dialog button{
     background-color: purple;
     color: white;
     border: 2px solid black;
@@ -203,19 +226,23 @@ dialog button{
     font-size: 1.3em;
     height: 40px;
 }
-dialog button:active{
+.container > .content >.dialog-container > .dialog button:active{
     border: none;
 }
-dialog button:hover{
+.container > .content >.dialog-container > .dialog button:hover{
     cursor: pointer;
 }
-dialog::backdrop{
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-}
 @media (max-width: 615px){
-    dialog{
+    .container > .content >.dialog-container > .dialog{
         padding: 8px;
+        border-radius: 20px;
+        bottom: 88%;
+    }
+    .container > .content >.dialog-container > .dialog input{
+        width: 200px;
+    }
+    .container > .content >.dialog-container > .dialog button{
+        width: 180px;
     }
     .container > .content{
         width: 80%;
@@ -230,7 +257,7 @@ dialog::backdrop{
         height: auto;
     }
     .container > .content > .main > .sec1 > .box textarea{
-        width: 220px;
+        width: 200px;
         height: 200px;
     }
     .container > .content > .main > .sec2 > .box textarea{
