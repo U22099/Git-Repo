@@ -49,12 +49,25 @@
                 Whatsapp: +234 903 357 2229">
                 <input type="hidden" name="_template" value="box">
                 <h1>Send me a message</h1>
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="name" placeholder="Name" autocomplete="true" required>
+                <input type="email" name="email" id="email" placeholder="Email" autocomplete="true" required>
                 <textarea name="msg" cols="30" rows="10" placeholder="Type in your message"></textarea>
                 <button type="submit">Submit</button>
             </form>
         </div>
     </div>
+    <script>
+        document.querySelector(".form").addEventListener("submit", (e)=>{
+            let re = /\b[A-Z0-9_+-.%]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/i;
+            if(!re.test(document.querySelector("#email").value)){
+                e.preventDefault();
+                document.querySelector("#email").value = "";
+                document.querySelector("#email").style.border = "2px solid red";
+                document.querySelector("#email").setAttribute("placeholder", "Invalid Email Address");
+            }else{
+                document.querySelector("#email").style.border = "none";
+            }
+        });
+    </script>
 </body>
 </html>
