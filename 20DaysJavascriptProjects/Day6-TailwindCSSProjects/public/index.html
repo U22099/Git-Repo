@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="text-gray-900 font-serif">
-    <div class="">
-        <div class="">
+    <div class="grid md:grid-cols-3">
+        <div class="md:col-span-1">
             <nav>
                 <div class="">
                     <h1 class="font-bold uppercase p-4 border-b-2 border-gray-100">
-                        <a href="/">Food Ninja</a>
+                        <a href="/" class="hover:text-gray-700 text-sm md:text-xl">Food Ninja</a>
                     </h1>
                 </div>
-                <ul>
+                <ul class="flex flex-row justify-end">
                     <li class="text-gray-700 font-bold">
                         <a href="#">
                             <span>Home</span>
@@ -34,10 +34,10 @@
                 </ul>
             </nav>
         </div>
-        <main class="px-16 py-6">
-            <div>
-                <a href="#" class="text-primary">Log In</a>
-                <a href="#" class="text-primary">Sign Up</a>
+        <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+            <div class="flex justify-center md:justify-end">
+                <a href="#" class="btn hover:bg-primary hover:text-white md:border-primary md:border-2 text-primary mr-2">Log In</a>
+                <a href="#" class="btn hover:bg-primary hover:text-white md:border-primary md:border-2 text-primary">Sign Up</a>
             </div>
             <header>
                 <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
@@ -45,13 +45,36 @@
             </header>
             <div>
                 <h4 class="font-bold mt-12 pb-2 border-b-2 border-gray-200">Latest Recipes</h4>
-                <div class="mt-8">
+                <div class="mt-8 grid lg:grid-cols-3 md:grid-cols-2 gap-10">
                     <!-- cards go here -->
-                    <div>
-                        <img src="img/IMG_0972.JPG" alt="">
-                        <div>
-                            <span>5 Beam Chilli Stew</span>
-                            <span>Recipe by Mario</span>
+                    <div class="card hover:shadow-lg">
+                        <img src="img/IMG_0972.JPG" alt=""  class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold">5 Beam Chilli Stew</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                        </div>
+                        <div class="barge">
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-lg">
+                        <img src="img/IMG_0972.JPG" alt=""  class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold"> Second Beam Chilli Stew</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                        </div>
+                        <div class="barge">
+                            <span>25 mins</span>
+                        </div>
+                    </div>
+                    <div class="card hover:shadow-lg">
+                        <img src="img/IMG_0972.JPG" alt=""  class="w-full h-32 sm:h-48 object-cover">
+                        <div class="m-4">
+                            <span class="font-bold"></span>Third Beam Chilli Stew</span>
+                            <span class="block text-gray-500 text-sm">Recipe by Mario</span>
+                        </div>
+                        <div class="barge">
+                            <span>25 mins</span>
                         </div>
                     </div>
                 </div>
@@ -59,8 +82,8 @@
                 <div class="mt-8">
                     <!-- Cards go here -->
                 </div>
-                <div>
-                    <div class="bg-secondary-100 text-secondary-200">Load more</div>
+                <div class="flex justify-center">
+                    <div class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner">Load more</div>
                 </div>
             </div>
         </main>
