@@ -5,28 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tail Wind Css Project</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
 </head>
 <body class="text-gray-900 font-serif">
     <div class="grid md:grid-cols-3">
         <div class="md:col-span-1">
             <nav>
-                <div class="">
-                    <h1 class="font-bold uppercase p-4 border-b-2 border-gray-100">
+                <div class="flex justify-between md:justify-start border-b-2 text-center border-gray-100">
+                    <h1 class="font-bold uppercase p-4 ">
                         <a href="/" class="hover:text-gray-700 text-sm md:text-xl">Food Ninja</a>
                     </h1>
+                    <div class="md:hidden rounded-2xl bg-primary w-10 h-8 mt-4 hover:cursor-pointer" id="myDiv">
+
+                    </div>
                 </div>
-                <ul class="flex flex-row justify-end">
-                    <li class="text-gray-700 font-bold">
+                <ul class="md:flex flex-col text-right hidden" id="myList">
+                    <li class="text-gray-700 font-bold pr-4 border-r-4 border-primary">
                         <a href="#">
                             <span>Home</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="pr-4 border-r-4 border-white">
                         <a href="#">
                             <span>About</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="pr-4 border-r-4 border-white">
                         <a href="#">
                             <span>Contact</span>
                         </a>
@@ -34,10 +38,10 @@
                 </ul>
             </nav>
         </div>
-        <main class="px-16 py-6 bg-gray-100 md:col-span-2">
+        <main class="p-4 md:px-16 md:py-6 bg-gray-100 md:col-span-2">
             <div class="flex justify-center md:justify-end">
-                <a href="#" class="btn hover:bg-primary hover:text-white md:border-primary md:border-2 text-primary mr-2">Log In</a>
-                <a href="#" class="btn hover:bg-primary hover:text-white md:border-primary md:border-2 text-primary">Sign Up</a>
+                <a href="#" class="btn transition ease-out duration-500 hover:bg-primary hover:text-white md:border-primary md:border-2 text-primary mr-2">Log In</a>
+                <a href="#" class="btn transition ease-out duration-500 hover:bg-primary hover:text-white md:border-primary md:border-2 text-primary">Sign Up</a>
             </div>
             <header>
                 <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
@@ -83,7 +87,8 @@
                     <!-- Cards go here -->
                 </div>
                 <div class="flex justify-center">
-                    <div class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner">Load more</div>
+                    <div class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner 
+                    transform hover:bg-opacity-50 hover:scale-125 transition ease-out duration-300">Load more</div>
                 </div>
             </div>
         </main>
