@@ -11,12 +11,11 @@
     <link rel="stylesheet" href="styles/homestyle.css">
     <link rel="stylesheet" href="styles/media-queries.css">
     <script>
-        var value = "visited";
-        localStorage.setItem("flag","visited");
-        localStorage.setItem("flag1","visited");
         function chkpass(){
-            var code = document.getElementById("input");
+            let code = document.getElementById("input");
             if(code.value == "903357"||code.value =="557866"||code.value =="886754"){
+                localStorage.setItem("flag","visited");
+                localStorage.setItem("flag1","visited");
                 window.location = "decision.html";
             }
             else{
