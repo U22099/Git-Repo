@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="styles/homestyle.css">
     <link rel="stylesheet" href="styles/media-queries.css">
     <script>
+        if(localStorage.getItem("flag")){
+            //window.location = "lovemessage.html";
+        }
         function chkpass(){
             let code = document.getElementById("input");
             if(code.value == "903357"||code.value =="557866"||code.value =="886754"){
